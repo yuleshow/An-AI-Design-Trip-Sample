@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a5451bc3a0e20594b9d94a2894e4a452 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+    <div style="position: fixed; top: 10px; left: 50%; transform: translateX(-50%); z-index: 1000;
+         background: #1a73e8; color: white;
+         padding: 10px 24px; border-radius: 8px; font-family: -apple-system, sans-serif;
+         font-size: 16px; font-weight: 700; box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+         white-space: nowrap;">
+        🚙 Day 1 (Thu 4/9) — Pasadena → Santa Clara via US-101
+    </div>
+    
+    
+    <div style="position: fixed; bottom: 20px; left: 20px; z-index: 1000;
+         background: white; padding: 12px 16px; border-radius: 8px;
+         font-family: -apple-system, sans-serif; max-width: 300px;
+         box-shadow: 0 2px 8px rgba(0,0,0,0.2); max-height: 50vh; overflow-y: auto;">
+        <div style="font-weight:700; margin-bottom:6px; font-size:14px;">📍 Stops</div>
+        <div style="margin: 2px 0; font-size: 12px;"><b>7:00 AM</b> — Pasadena — Departure</div><div style="margin: 2px 0; font-size: 12px;"><b>~8:30 AM</b> — Ventura</div><div style="margin: 2px 0; font-size: 12px;"><b>~9:30 AM</b> — Santa Barbara</div><div style="margin: 2px 0; font-size: 12px;"><b>~10:30 AM</b> — Solvang</div><div style="margin: 2px 0; font-size: 12px;"><b>~12:00 PM</b> — Pismo Beach — Lunch</div><div style="margin: 2px 0; font-size: 12px;"><b>~1:45 PM</b> — Paso Robles</div><div style="margin: 2px 0; font-size: 12px;"><b>~4:15 PM</b> — Gilroy</div><div style="margin: 2px 0; font-size: 12px;"><b>~5:30 PM</b> — 3223 Kenneth St, Santa Clara</div><div style="margin: 2px 0; font-size: 12px;"><b>~5:45–7:00 PM</b> — Stanford University</div>
+    </div>
+    
+    
+            <div class="folium-map" id="map_a5451bc3a0e20594b9d94a2894e4a452" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a5451bc3a0e20594b9d94a2894e4a452 = L.map(
+                "map_a5451bc3a0e20594b9d94a2894e4a452",
+                {
+                    center: [35.55506666666666, -120.47053333333332],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fef657b299bf6cd6505c17b2ad5b1dab = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_fef657b299bf6cd6505c17b2ad5b1dab.addTo(map_a5451bc3a0e20594b9d94a2894e4a452);
+        
+    
+            var poly_line_c91e7e4327d2cb49ac0fed00655e724a = L.polyline(
+                [[34.1478, -118.1445], [34.2746, -119.229], [34.4208, -119.6982], [34.5958, -120.1376], [35.1428, -120.6413], [35.6264, -120.691], [37.0058, -121.5683], [37.3541, -121.9552], [37.4275, -122.1697]],
+                {"bubblingMouseEvents": true, "color": "#1a73e8", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#1a73e8", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_a5451bc3a0e20594b9d94a2894e4a452);
+        
+    
+            var marker_442c03e18c1493e70618140266e3fa94 = L.marker(
+                [34.1478, -118.1445],
+                {
+}
+            ).addTo(map_a5451bc3a0e20594b9d94a2894e4a452);
+        
+    
+            var icon_622f3ba5f3f6f1ce8eccf4aac45253e9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_44997c9373d6595df0d2e474dc860438 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_1a0af928665802356ba0519ee1032fea = $(`<div id="html_1a0af928665802356ba0519ee1032fea" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, sans-serif; min-width: 200px;">             <h4 style="margin:0 0 4px; color: #1a202c;">Pasadena — Departure</h4>             <p style="margin:0 0 4px; color: #64748b; font-size: 13px;"><b>7:00 AM</b></p>             <p style="margin:0; font-size: 13px; color: #475569;">Fill gas, grab coffee, take I-210 W → SR-134 W → US-101 N</p>         </div>         </div>`)[0];
+                popup_44997c9373d6595df0d2e474dc860438.setContent(html_1a0af928665802356ba0519ee1032fea);
+            
+        
+
+        marker_442c03e18c1493e70618140266e3fa94.bindPopup(popup_44997c9373d6595df0d2e474dc860438)
+        ;
+
+        
+    
+    
+            marker_442c03e18c1493e70618140266e3fa94.bindTooltip(
+                `<div>
+                     7:00 AM — Pasadena — Departure
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_442c03e18c1493e70618140266e3fa94.setIcon(icon_622f3ba5f3f6f1ce8eccf4aac45253e9);
+            
+    
+            var marker_61eb00d4d018b88db8a63b55cd58ec71 = L.marker(
+                [34.2746, -119.229],
+                {
+}
+            ).addTo(map_a5451bc3a0e20594b9d94a2894e4a452);
+        
+    
+            var icon_1c8b12e2b05344b050f6edff740c2a8a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8394d302c0f21092cff016a3342560e9 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_181a75cef12761c88c51991072a38896 = $(`<div id="html_181a75cef12761c88c51991072a38896" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, sans-serif; min-width: 200px;">             <h4 style="margin:0 0 4px; color: #1a202c;">Ventura</h4>             <p style="margin:0 0 4px; color: #64748b; font-size: 13px;"><b>~8:30 AM</b></p>             <p style="margin:0; font-size: 13px; color: #475569;">Ventura Pier & Promenade. First ocean views!</p>         </div>         </div>`)[0];
+                popup_8394d302c0f21092cff016a3342560e9.setContent(html_181a75cef12761c88c51991072a38896);
+            
+        
+
+        marker_61eb00d4d018b88db8a63b55cd58ec71.bindPopup(popup_8394d302c0f21092cff016a3342560e9)
+        ;
+
+        
+    
+    
+            marker_61eb00d4d018b88db8a63b55cd58ec71.bindTooltip(
+                `<div>
+                     ~8:30 AM — Ventura
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_61eb00d4d018b88db8a63b55cd58ec71.setIcon(icon_1c8b12e2b05344b050f6edff740c2a8a);
+            
+    
+            var marker_1a715454cb3b3b3c861843279e5dc49d = L.marker(
+                [34.4208, -119.6982],
+                {
+}
+            ).addTo(map_a5451bc3a0e20594b9d94a2894e4a452);
+        
+    
+            var icon_d63eb4c6c4af82d98c04ec26dc75913b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_72c3261dc98e3e1a0f4c5e22929979f5 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_cb49b1e7a5fc2adf3a38e40fe3b42166 = $(`<div id="html_cb49b1e7a5fc2adf3a38e40fe3b42166" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, sans-serif; min-width: 200px;">             <h4 style="margin:0 0 4px; color: #1a202c;">Santa Barbara</h4>             <p style="margin:0 0 4px; color: #64748b; font-size: 13px;"><b>~9:30 AM</b></p>             <p style="margin:0; font-size: 13px; color: #475569;">Stearns Wharf, State Street. The 'American Riviera.'</p>         </div>         </div>`)[0];
+                popup_72c3261dc98e3e1a0f4c5e22929979f5.setContent(html_cb49b1e7a5fc2adf3a38e40fe3b42166);
+            
+        
+
+        marker_1a715454cb3b3b3c861843279e5dc49d.bindPopup(popup_72c3261dc98e3e1a0f4c5e22929979f5)
+        ;
+
+        
+    
+    
+            marker_1a715454cb3b3b3c861843279e5dc49d.bindTooltip(
+                `<div>
+                     ~9:30 AM — Santa Barbara
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1a715454cb3b3b3c861843279e5dc49d.setIcon(icon_d63eb4c6c4af82d98c04ec26dc75913b);
+            
+    
+            var marker_2332fe1e902a7b13fa0978c7697e55f2 = L.marker(
+                [34.5958, -120.1376],
+                {
+}
+            ).addTo(map_a5451bc3a0e20594b9d94a2894e4a452);
+        
+    
+            var icon_8503265e4fc56c36ae365e90f2c7ea42 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1556fa56d32043573f9afaaaec158121 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_768f3e9934311e3b85e9cbb8ee7e7c62 = $(`<div id="html_768f3e9934311e3b85e9cbb8ee7e7c62" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, sans-serif; min-width: 200px;">             <h4 style="margin:0 0 4px; color: #1a202c;">Solvang</h4>             <p style="margin:0 0 4px; color: #64748b; font-size: 13px;"><b>~10:30 AM</b></p>             <p style="margin:0; font-size: 13px; color: #475569;">Danish village! Æbleskiver pancakes, windmills.</p>         </div>         </div>`)[0];
+                popup_1556fa56d32043573f9afaaaec158121.setContent(html_768f3e9934311e3b85e9cbb8ee7e7c62);
+            
+        
+
+        marker_2332fe1e902a7b13fa0978c7697e55f2.bindPopup(popup_1556fa56d32043573f9afaaaec158121)
+        ;
+
+        
+    
+    
+            marker_2332fe1e902a7b13fa0978c7697e55f2.bindTooltip(
+                `<div>
+                     ~10:30 AM — Solvang
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2332fe1e902a7b13fa0978c7697e55f2.setIcon(icon_8503265e4fc56c36ae365e90f2c7ea42);
+            
+    
+            var marker_b0392dc6d787a23e888e8e270f541348 = L.marker(
+                [35.1428, -120.6413],
+                {
+}
+            ).addTo(map_a5451bc3a0e20594b9d94a2894e4a452);
+        
+    
+            var icon_1a5ffc5f16d3995307a35f0f412948e3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_447552cd9b6572aa8db92eb4f7e4df92 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_e0927efbe333b8cea2e697147e4a4f76 = $(`<div id="html_e0927efbe333b8cea2e697147e4a4f76" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, sans-serif; min-width: 200px;">             <h4 style="margin:0 0 4px; color: #1a202c;">Pismo Beach — Lunch</h4>             <p style="margin:0 0 4px; color: #64748b; font-size: 13px;"><b>~12:00 PM</b></p>             <p style="margin:0; font-size: 13px; color: #475569;">Splash Café clam chowder! ⛽ Refuel here.</p>         </div>         </div>`)[0];
+                popup_447552cd9b6572aa8db92eb4f7e4df92.setContent(html_e0927efbe333b8cea2e697147e4a4f76);
+            
+        
+
+        marker_b0392dc6d787a23e888e8e270f541348.bindPopup(popup_447552cd9b6572aa8db92eb4f7e4df92)
+        ;
+
+        
+    
+    
+            marker_b0392dc6d787a23e888e8e270f541348.bindTooltip(
+                `<div>
+                     ~12:00 PM — Pismo Beach — Lunch
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b0392dc6d787a23e888e8e270f541348.setIcon(icon_1a5ffc5f16d3995307a35f0f412948e3);
+            
+    
+            var marker_e82ea49228f2e97a12db00e2e301593b = L.marker(
+                [35.6264, -120.691],
+                {
+}
+            ).addTo(map_a5451bc3a0e20594b9d94a2894e4a452);
+        
+    
+            var icon_95158a93e58159caa50096e744e07db6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "glass",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dd7a5582075beb69cb7774fc90ed13c9 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_2499e68e4844f114ab415aedf4816c07 = $(`<div id="html_2499e68e4844f114ab415aedf4816c07" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, sans-serif; min-width: 200px;">             <h4 style="margin:0 0 4px; color: #1a202c;">Paso Robles</h4>             <p style="margin:0 0 4px; color: #64748b; font-size: 13px;"><b>~1:45 PM</b></p>             <p style="margin:0; font-size: 13px; color: #475569;">Wine country town square. Coffee & stretch.</p>         </div>         </div>`)[0];
+                popup_dd7a5582075beb69cb7774fc90ed13c9.setContent(html_2499e68e4844f114ab415aedf4816c07);
+            
+        
+
+        marker_e82ea49228f2e97a12db00e2e301593b.bindPopup(popup_dd7a5582075beb69cb7774fc90ed13c9)
+        ;
+
+        
+    
+    
+            marker_e82ea49228f2e97a12db00e2e301593b.bindTooltip(
+                `<div>
+                     ~1:45 PM — Paso Robles
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e82ea49228f2e97a12db00e2e301593b.setIcon(icon_95158a93e58159caa50096e744e07db6);
+            
+    
+            var marker_8276dd7a9b7869e689b9c5705c847191 = L.marker(
+                [37.0058, -121.5683],
+                {
+}
+            ).addTo(map_a5451bc3a0e20594b9d94a2894e4a452);
+        
+    
+            var icon_2a7df4f288470c3cf84cc173dcfc8b07 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3930d6572cde512f71210b9bb68699c6 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_f0b43360853e705628152cba516d7176 = $(`<div id="html_f0b43360853e705628152cba516d7176" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, sans-serif; min-width: 200px;">             <h4 style="margin:0 0 4px; color: #1a202c;">Gilroy</h4>             <p style="margin:0 0 4px; color: #64748b; font-size: 13px;"><b>~4:15 PM</b></p>             <p style="margin:0; font-size: 13px; color: #475569;">Garlic Capital! Gilroy Premium Outlets.</p>         </div>         </div>`)[0];
+                popup_3930d6572cde512f71210b9bb68699c6.setContent(html_f0b43360853e705628152cba516d7176);
+            
+        
+
+        marker_8276dd7a9b7869e689b9c5705c847191.bindPopup(popup_3930d6572cde512f71210b9bb68699c6)
+        ;
+
+        
+    
+    
+            marker_8276dd7a9b7869e689b9c5705c847191.bindTooltip(
+                `<div>
+                     ~4:15 PM — Gilroy
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8276dd7a9b7869e689b9c5705c847191.setIcon(icon_2a7df4f288470c3cf84cc173dcfc8b07);
+            
+    
+            var marker_641b474187c601a6c6d835382a1b2d14 = L.marker(
+                [37.3541, -121.9552],
+                {
+}
+            ).addTo(map_a5451bc3a0e20594b9d94a2894e4a452);
+        
+    
+            var icon_6674d0c31a619f71487eb248326b510c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "briefcase",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e40136380f73ca7908178d26174d07e8 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_72c845524f656ea76008354a29f7f0e3 = $(`<div id="html_72c845524f656ea76008354a29f7f0e3" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, sans-serif; min-width: 200px;">             <h4 style="margin:0 0 4px; color: #1a202c;">3223 Kenneth St, Santa Clara</h4>             <p style="margin:0 0 4px; color: #64748b; font-size: 13px;"><b>~5:30 PM</b></p>             <p style="margin:0; font-size: 13px; color: #475569;">Arrive at destination. Drop luggage at hotel.</p>         </div>         </div>`)[0];
+                popup_e40136380f73ca7908178d26174d07e8.setContent(html_72c845524f656ea76008354a29f7f0e3);
+            
+        
+
+        marker_641b474187c601a6c6d835382a1b2d14.bindPopup(popup_e40136380f73ca7908178d26174d07e8)
+        ;
+
+        
+    
+    
+            marker_641b474187c601a6c6d835382a1b2d14.bindTooltip(
+                `<div>
+                     ~5:30 PM — 3223 Kenneth St, Santa Clara
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_641b474187c601a6c6d835382a1b2d14.setIcon(icon_6674d0c31a619f71487eb248326b510c);
+            
+    
+            var marker_b0bf6b858597aee582b8100de984d5fd = L.marker(
+                [37.4275, -122.1697],
+                {
+}
+            ).addTo(map_a5451bc3a0e20594b9d94a2894e4a452);
+        
+    
+            var icon_0b58e13c64aa5c3df0b3884e8b4b73dc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1db2f9ea25ebff5baf8260613bb36ac6 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_15928c7b1be9acce69f6c87b57b0c7b2 = $(`<div id="html_15928c7b1be9acce69f6c87b57b0c7b2" style="width: 100.0%; height: 100.0%;">         <div style="font-family: -apple-system, sans-serif; min-width: 200px;">             <h4 style="margin:0 0 4px; color: #1a202c;">Stanford University</h4>             <p style="margin:0 0 4px; color: #64748b; font-size: 13px;"><b>~5:45–7:00 PM</b></p>             <p style="margin:0; font-size: 13px; color: #475569;">Palm Drive, Main Quad, Memorial Church at golden hour!</p>         </div>         </div>`)[0];
+                popup_1db2f9ea25ebff5baf8260613bb36ac6.setContent(html_15928c7b1be9acce69f6c87b57b0c7b2);
+            
+        
+
+        marker_b0bf6b858597aee582b8100de984d5fd.bindPopup(popup_1db2f9ea25ebff5baf8260613bb36ac6)
+        ;
+
+        
+    
+    
+            marker_b0bf6b858597aee582b8100de984d5fd.bindTooltip(
+                `<div>
+                     ~5:45–7:00 PM — Stanford University
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b0bf6b858597aee582b8100de984d5fd.setIcon(icon_0b58e13c64aa5c3df0b3884e8b4b73dc);
+            
+    
+            var circle_marker_fd341834e4ea364e8a819495e21450a9 = L.circleMarker(
+                [34.1478, -118.1445],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_a5451bc3a0e20594b9d94a2894e4a452);
+        
+    
+            var circle_marker_3700b77c5c9f688a51bf85ec9426f836 = L.circleMarker(
+                [34.2746, -119.229],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_a5451bc3a0e20594b9d94a2894e4a452);
+        
+    
+            var circle_marker_2023425620da6b223da90c2871f6b92a = L.circleMarker(
+                [34.4208, -119.6982],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_a5451bc3a0e20594b9d94a2894e4a452);
+        
+    
+            var circle_marker_f6d4d8940b9d656ca6c17ae0fb851090 = L.circleMarker(
+                [34.5958, -120.1376],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_a5451bc3a0e20594b9d94a2894e4a452);
+        
+    
+            var circle_marker_32fa1571fe0dcb798208586e06a44b43 = L.circleMarker(
+                [35.1428, -120.6413],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_a5451bc3a0e20594b9d94a2894e4a452);
+        
+    
+            var circle_marker_a6979fac80a68f530550246e425e97f1 = L.circleMarker(
+                [35.6264, -120.691],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_a5451bc3a0e20594b9d94a2894e4a452);
+        
+    
+            var circle_marker_083a9b967519ce0080139510cfea70b7 = L.circleMarker(
+                [37.0058, -121.5683],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_a5451bc3a0e20594b9d94a2894e4a452);
+        
+    
+            var circle_marker_753182f85b52a4390fbc05ddb4b40952 = L.circleMarker(
+                [37.3541, -121.9552],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_a5451bc3a0e20594b9d94a2894e4a452);
+        
+    
+            var circle_marker_f84ee82b4dd59b8d70d2cdaff53dd591 = L.circleMarker(
+                [37.4275, -122.1697],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_a5451bc3a0e20594b9d94a2894e4a452);
+        
+    
+            map_a5451bc3a0e20594b9d94a2894e4a452.fitBounds(
+                [[34.1478, -118.1445], [34.2746, -119.229], [34.4208, -119.6982], [34.5958, -120.1376], [35.1428, -120.6413], [35.6264, -120.691], [37.0058, -121.5683], [37.3541, -121.9552], [37.4275, -122.1697]],
+                {"padding": [40, 40]}
+            );
+        
+</script>
+</html>
