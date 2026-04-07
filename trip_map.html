@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pasadena ↔ Santa Clara Road Trip Map</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f0f4f8;
+      color: #1a202c;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+      color: white;
+      padding: 24px 32px;
+      text-align: center;
+    }
+    .header h1 { font-size: 24px; font-weight: 700; margin-bottom: 4px; }
+    .header p { font-size: 14px; opacity: 0.85; }
+
+    .tabs {
+      display: flex;
+      justify-content: center;
+      gap: 0;
+      background: #fff;
+      border-bottom: 2px solid #e2e8f0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .tab {
+      padding: 14px 32px;
+      cursor: pointer;
+      font-size: 15px;
+      font-weight: 600;
+      border-bottom: 3px solid transparent;
+      transition: all 0.2s;
+      user-select: none;
+      color: #64748b;
+    }
+    .tab:hover { color: #334155; background: #f8fafc; }
+    .tab.active-day1 { color: #1a73e8; border-bottom-color: #1a73e8; }
+    .tab.active-day2 { color: #db2777; border-bottom-color: #db2777; }
+
+    .content { display: none; }
+    .content.active { display: block; }
+
+    .map-container {
+      width: 100%;
+      height: 60vh;
+      min-height: 420px;
+      border-bottom: 1px solid #e2e8f0;
+      position: relative;
+    }
+    .map-container iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .gmaps-overlay {
+      position: absolute;
+      bottom: 16px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 800;
+    }
+
+    .stops-timeline {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 24px 20px 40px;
+    }
+    .stops-timeline h2 {
+      font-size: 18px;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .stop-card {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 0;
+      position: relative;
+    }
+    .stop-line {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 24px;
+      flex-shrink: 0;
+    }
+    .stop-dot {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      border: 3px solid white;
+      box-shadow: 0 0 0 2px currentColor, 0 1px 3px rgba(0,0,0,0.2);
+      flex-shrink: 0;
+      z-index: 1;
+    }
+    .stop-connector {
+      width: 2px;
+      flex-grow: 1;
+      min-height: 20px;
+      opacity: 0.3;
+    }
+    .stop-info {
+      background: white;
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin-bottom: 12px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+      flex-grow: 1;
+    }
+    .stop-info h3 { font-size: 15px; margin-bottom: 2px; }
+    .stop-info .time { font-size: 13px; color: #64748b; margin-bottom: 4px; }
+    .stop-info .desc { font-size: 13px; line-height: 1.5; color: #475569; }
+    .stop-info .fuel-badge {
+      display: inline-block;
+      background: #fef2f2;
+      color: #991b1b;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 2px 10px;
+      border-radius: 12px;
+      margin-top: 6px;
+      border: 1px solid #fecaca;
+    }
+    .stop-info .biz-badge {
+      display: inline-block;
+      background: #fef3c7;
+      color: #92400e;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 2px 10px;
+      border-radius: 12px;
+      margin-top: 6px;
+      border: 1px solid #fde68a;
+    }
+
+    .open-gmaps {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      color: white;
+      transition: transform 0.1s, box-shadow 0.2s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    }
+    .open-gmaps:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0,0,0,0.25); }
+    .open-gmaps.day1 { background: #1a73e8; }
+    .open-gmaps.day2 { background: #db2777; }
+
+    .btn-row { text-align: center; padding: 8px 0 0; }
+
+    .warning-bar {
+      background: #fef2f2;
+      border-left: 4px solid #ef4444;
+      padding: 10px 16px;
+      margin: 16px auto;
+      max-width: 800px;
+      border-radius: 0 8px 8px 0;
+      font-size: 13px;
+      color: #991b1b;
+      line-height: 1.5;
+    }
+    .warning-bar strong { color: #7f1d1d; }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>🚙 Pasadena ↔ Santa Clara Road Trip</h1>
+    <p>2011 Jeep Wrangler Sahara · ~770 miles round trip · 2 days</p>
+  </div>
+
+  <div class="tabs">
+    <div class="tab active-day1" id="tab1" onclick="showDay(1)">🟦 Day 1 (Thu 4/9) — US-101 North</div>
+    <div class="tab" id="tab2" onclick="showDay(2)">🟪 Day 2 (Fri 4/10) — CA-1 PCH South</div>
+  </div>
+
+  <!-- ═══════ DAY 1 ═══════ -->
+  <div class="content active" id="day1">
+    <div class="map-container">
+      <iframe
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://maps.google.com/maps?saddr=Pasadena,+CA&daddr=Ventura,+CA+to:Santa+Barbara,+CA+to:Solvang,+CA+to:Pismo+Beach,+CA+to:Paso+Robles,+CA+to:Gilroy,+CA+to:3223+Kenneth+St,+Santa+Clara,+CA+95054+to:Stanford+University,+Stanford,+CA&output=embed"
+        allowfullscreen
+      ></iframe>
+      <div class="gmaps-overlay">
+        <a class="open-gmaps day1" href="https://www.google.com/maps/dir/Pasadena,+CA/Ventura,+CA/Santa+Barbara,+CA/Solvang,+CA/Pismo+Beach,+CA/Paso+Robles,+CA/Gilroy,+CA/3223+Kenneth+St,+Santa+Clara,+CA+95054/Stanford+University,+Stanford,+CA" target="_blank" rel="noopener">
+          📍 Open Day 1 Route in Google Maps
+        </a>
+      </div>
+    </div>
+
+    <div class="stops-timeline">
+      <h2>📍 Day 1 (Thu 4/9) — Pasadena → Santa Clara via US-101</h2>
+
+      <div class="stop-card">
+        <div class="stop-line"><div class="stop-dot" style="color:#1a73e8"></div><div class="stop-connector" style="background:#1a73e8"></div></div>
+        <div class="stop-info"><h3>🏠 Pasadena — Departure</h3><div class="time">7:00 AM</div><div class="desc">Fill gas, grab coffee, take I-210 W → SR-134 W → US-101 N</div></div>
+      </div>
+      <div class="stop-card">
+        <div class="stop-line"><div class="stop-dot" style="color:#1a73e8"></div><div class="stop-connector" style="background:#1a73e8"></div></div>
+        <div class="stop-info"><h3>🌊 Stop 1: Ventura</h3><div class="time">~8:30 AM · 70 mi · 1.5 hr</div><div class="desc">Ventura Pier & Promenade. First ocean views! Coffee & stretch.</div></div>
+      </div>
+      <div class="stop-card">
+        <div class="stop-line"><div class="stop-dot" style="color:#1a73e8"></div><div class="stop-connector" style="background:#1a73e8"></div></div>
+        <div class="stop-info"><h3>🌴 Stop 2: Santa Barbara</h3><div class="time">~9:30 AM · 30 mi · 35 min</div><div class="desc">Stearns Wharf, State Street. The "American Riviera." Walk the wharf.</div></div>
+      </div>
+      <div class="stop-card">
+        <div class="stop-line"><div class="stop-dot" style="color:#1a73e8"></div><div class="stop-connector" style="background:#1a73e8"></div></div>
+        <div class="stop-info"><h3>🏘️ Stop 3: Solvang</h3><div class="time">~10:30 AM · 35 mi · 40 min</div><div class="desc">Danish village! Æbleskiver pancakes, windmills, bakeries.</div></div>
+      </div>
+      <div class="stop-card">
+        <div class="stop-line"><div class="stop-dot" style="color:#1a73e8"></div><div class="stop-connector" style="background:#1a73e8"></div></div>
+        <div class="stop-info"><h3>🏖️ Stop 4: Pismo Beach — Lunch</h3><div class="time">~12:00 PM · 60 mi · 1 hr</div><div class="desc">Splash Café clam chowder in a bread bowl — legendary! Walk the pier.</div><span class="fuel-badge">⛽ Refuel here</span></div>
+      </div>
+      <div class="stop-card">
+        <div class="stop-line"><div class="stop-dot" style="color:#1a73e8"></div><div class="stop-connector" style="background:#1a73e8"></div></div>
+        <div class="stop-info"><h3>🍷 Stop 5: Paso Robles</h3><div class="time">~1:45 PM · 55 mi · 50 min</div><div class="desc">Wine country town square. Coffee, ice cream, stretch your legs.</div></div>
+      </div>
+      <div class="stop-card">
+        <div class="stop-line"><div class="stop-dot" style="color:#1a73e8"></div><div class="stop-connector" style="background:#1a73e8"></div></div>
+        <div class="stop-info"><h3>🧄 Stop 6: Gilroy</h3><div class="time">~4:15 PM · 100 mi · 1 hr 45 min</div><div class="desc">"Garlic Capital of the World." Quick browse at Gilroy Premium Outlets.</div></div>
+      </div>
+      <div class="stop-card">
+        <div class="stop-line"><div class="stop-dot" style="color:#1a73e8"></div><div class="stop-connector" style="background:#1a73e8"></div></div>
+        <div class="stop-info"><h3>💼 Arrive: 3223 Kenneth St, Santa Clara</h3><div class="time">~5:30 PM · 30 mi · 35 min</div><div class="desc">Drop off luggage at hotel, freshen up. Then head to Stanford!</div></div>
+      </div>
+      <div class="stop-card">
+        <div class="stop-line"><div class="stop-dot" style="color:#1a73e8"></div></div>
+        <div class="stop-info"><h3>🎓 Stop 7: Stanford University</h3><div class="time">~5:45–7:00 PM · 10 mi · 15 min</div><div class="desc">Palm Drive, Main Quad, Memorial Church (stunning at golden hour!), Hoover Tower. Free parking after 4 PM. Sunset ~7:40 PM — perfect dusk walk.</div></div>
+      </div>
+
+      <div class="btn-row">
+        <a class="open-gmaps day1" href="https://www.google.com/maps/dir/Pasadena,+CA/Ventura,+CA/Santa+Barbara,+CA/Solvang,+CA/Pismo+Beach,+CA/Paso+Robles,+CA/Gilroy,+CA/3223+Kenneth+St,+Santa+Clara,+CA+95054/Stanford+University,+Stanford,+CA" target="_blank" rel="noopener">
+          📍 Open Day 1 in Google Maps
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════ DAY 2 ═══════ -->
+  <div class="content" id="day2">
+    <div class="map-container">
+      <iframe
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://maps.google.com/maps?saddr=3223+Kenneth+St,+Santa+Clara,+CA+95054&daddr=Cannery+Row,+Monterey,+CA+to:Bixby+Creek+Bridge,+Big+Sur,+CA+to:Piedras+Blancas+Elephant+Seal+Rookery,+San+Simeon,+CA+to:Morro+Bay,+CA+to:Pasadena,+CA&output=embed"
+        allowfullscreen
+      ></iframe>
+      <div class="gmaps-overlay">
+        <a class="open-gmaps day2" href="https://www.google.com/maps/dir/3223+Kenneth+St,+Santa+Clara,+CA+95054/Cannery+Row,+Monterey,+CA/Bixby+Creek+Bridge,+Big+Sur,+CA/Piedras+Blancas+Elephant+Seal+Rookery,+San+Simeon,+CA/Morro+Bay,+CA/Pasadena,+CA" target="_blank" rel="noopener">
+          📍 Open Day 2 Route in Google Maps
+        </a>
+      </div>
+    </div>
+
+    <div class="warning-bar">
+      <strong>⚠️ CRITICAL — No gas stations for ~90 miles between Monterey and San Simeon!</strong><br>
+      Fill your tank completely in Monterey before entering Big Sur. No fuel, no cell service, winding cliffside roads.
+    </div>
+
+    <div class="stops-timeline">
+      <h2>📍 Day 2 (Fri 4/10) — Santa Clara → Pasadena via CA-1 PCH 🌊</h2>
+
+      <div class="stop-card">
+        <div class="stop-line"><div class="stop-dot" style="color:#db2777"></div><div class="stop-connector" style="background:#db2777"></div></div>
+        <div class="stop-info"><h3>💼 Business Meeting — 3223 Kenneth St</h3><div class="time">9:00–11:00 AM</div><div class="desc">Two-hour business meeting. Breakfast at hotel, check out, drive to meeting by 8:45 AM.</div><span class="biz-badge">💼 Business · 2 hours</span></div>
+      </div>
+      <div class="stop-card">
+        <div class="stop-line"><div class="stop-dot" style="color:#db2777"></div><div class="stop-connector" style="background:#db2777"></div></div>
+        <div class="stop-info"><h3>🚗 Depart Santa Clara</h3><div class="time">~11:15 AM</div><div class="desc">Fill gas, then CA-17 S → CA-1 S toward Monterey. Long scenic day ahead!</div><span class="fuel-badge">⛽ Fill up before/after meeting</span></div>
+      </div>
+      <div class="stop-card">
+        <div class="stop-line"><div class="stop-dot" style="color:#db2777"></div><div class="stop-connector" style="background:#db2777"></div></div>
+        <div class="stop-info"><h3>🦦 Stop 1: Monterey / Cannery Row</h3><div class="time">~1:00 PM · 75 mi · 1 hr 45 min</div><div class="desc">Cannery Row waterfront. Sea otters in the bay! Quick stop — lots of coast ahead.</div><span class="fuel-badge">⛽ LAST GAS for 90 miles!</span></div>
+      </div>
+      <div class="stop-card">
+        <div class="stop-line"><div class="stop-dot" style="color:#db2777"></div><div class="stop-connector" style="background:#db2777"></div></div>
+        <div class="stop-info"><h3>🌉 Stop 2: Bixby Bridge & Big Sur</h3><div class="time">~2:20 PM · 30 mi · 1 hr (winding!)</div><div class="desc">714-ft bridge, 280 ft above crashing surf. Most photographed bridge in CA. Jaw-dropping coastal cliffs.</div></div>
+      </div>
+      <div class="stop-card">
+        <div class="stop-line"><div class="stop-dot" style="color:#db2777"></div><div class="stop-connector" style="background:#db2777"></div></div>
+        <div class="stop-info"><h3>🦭 Stop 3: San Simeon — Elephant Seals</h3><div class="time">~4:40 PM · 60 mi · 2 hr</div><div class="desc">FREE boardwalk over thousands of elephant seals (up to 5,000 lbs!). Hearst Castle on the hilltop.</div></div>
+      </div>
+      <div class="stop-card">
+        <div class="stop-line"><div class="stop-dot" style="color:#db2777"></div><div class="stop-connector" style="background:#db2777"></div></div>
+        <div class="stop-info"><h3>🪨 Stop 4: Morro Bay — Dinner</h3><div class="time">~5:15 PM · 25 mi · 30 min</div><div class="desc">Morro Rock — 581-ft volcanic plug. Quick seafood dinner on the Embarcadero.</div><span class="fuel-badge">⛽ Refuel after Big Sur</span></div>
+      </div>
+      <div class="stop-card">
+        <div class="stop-line"><div class="stop-dot" style="color:#db2777"></div></div>
+        <div class="stop-info"><h3>🏠 Arrive Home: Pasadena</h3><div class="time">~9:15–9:30 PM · 215 mi · 3.5 hr via US-101 S</div><div class="desc">SLO → Santa Barbara → Ventura → Pasadena. No traffic at this hour — smooth sailing home! 🎉</div></div>
+      </div>
+
+      <div class="btn-row">
+        <a class="open-gmaps day2" href="https://www.google.com/maps/dir/3223+Kenneth+St,+Santa+Clara,+CA+95054/Cannery+Row,+Monterey,+CA/Bixby+Creek+Bridge,+Big+Sur,+CA/Piedras+Blancas+Elephant+Seal+Rookery,+San+Simeon,+CA/Morro+Bay,+CA/Pasadena,+CA" target="_blank" rel="noopener">
+          📍 Open Day 2 in Google Maps
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function showDay(day) {
+      document.getElementById('day1').classList.toggle('active', day === 1);
+      document.getElementById('day2').classList.toggle('active', day === 2);
+      document.getElementById('tab1').className = 'tab' + (day === 1 ? ' active-day1' : '');
+      document.getElementById('tab2').className = 'tab' + (day === 2 ? ' active-day2' : '');
+    }
+  </script>
+</body>
+</html>
