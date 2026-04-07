@@ -26,8 +26,10 @@
 | Fuel Type | Regular Unleaded (87 octane) |
 | Fuel Tank | 18.6 gal (2-door) / 22.5 gal (4-door) |
 | Highway Range | ~350–425 miles per tank |
-| Est. Fuel Needed | ~43 gallons round trip |
-| Est. Fuel Cost | ~$205–$215 (at ~$4.80/gal CA average) |
+| Est. Fuel Needed | ~45 gallons round trip |
+| Est. Fuel Cost | ~$255–$270 (at ~$5.70–$6.00/gal CA average, Apr 2026) |
+
+> **⚠️ Gas prices are HIGH right now!** CA average is ~$5.90/gal (Apr 2026). LA area ~$6.03, Santa Barbara ~$5.68, Salinas/Monterey ~$5.88, San Jose ~$5.92. Budget accordingly — consider filling up at Costco ($0.30–$0.50 cheaper) when possible.
 
 > **Fuel Strategy:** Fill up in Pasadena before departure. Refuel at Pismo Beach area on Day 1. Fill up in Santa Clara before Day 2. **CRITICAL for Day 2:** Gas stations are scarce on CA-1 through Big Sur (~90 miles with NO gas). Fill up in Monterey and again in San Simeon/Cambria or Morro Bay.
 
@@ -449,12 +451,12 @@ Santa Clara ──(75mi)──► Monterey / Cannery Row
 
 | Expense | Estimated Cost |
 |---|---|
-| Gas (~45 gallons × $4.80) | $215 |
+| Gas (~45 gallons × $5.90 avg) | $265 |
 | Hotel in Santa Clara (1 night) | $100–$220 |
 | Meals (Day 1 lunch/dinner, Day 2 lunch) | $60–$100 |
 | Coffee / snacks / treats | $25–$40 |
 | Parking (Santa Barbara, Pismo, Cannery Row) | $15–$25 |
-| **Total Estimate** | **$415–$600** |
+| **Total Estimate** | **$465–$650** |
 
 ---
 
