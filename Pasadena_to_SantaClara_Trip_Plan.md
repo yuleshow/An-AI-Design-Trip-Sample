@@ -422,6 +422,7 @@ Santa Clara ──(75mi)──► Monterey / Cannery Row
 - [ ] Light jacket — coastal fog can make Big Sur chilly even on warm days
 - [ ] Comfortable walking shoes (Cannery Row, Morro Rock, elephant seals)
 - [ ] Camera — you WILL regret not having one on the Big Sur drive
+- [ ] Camera flash / external speedlight — for Lone Cypress, Stanford at dusk, and low-light shots
 - [ ] Cash — some Big Sur cafés and small-town shops are cash-only
 - [ ] Water bottles (at least 2L — limited services in Big Sur)
 - [ ] Snacks for the road — **especially for Big Sur stretch** where there are few/no stores
@@ -468,19 +469,29 @@ Santa Clara ──(75mi)──► Monterey / Cannery Row
    - Your Wrangler handles the winding Big Sur road well — higher driving position gives great views
    - Good music/podcasts are essential — download them offline for Big Sur!
 
+7. **105 kg Package on Return Trip:**
+   - Secure the package tightly in the cargo area — Big Sur has sharp turns and steep grades
+   - Use ratchet straps or bungee cords to prevent shifting
+   - The extra 231 lbs will slightly increase braking distance on downhill Big Sur curves — leave extra following distance
+   - Consider increasing tire pressure by 2–3 PSI for the heavier load (check your door jamb sticker for loaded pressure)
+
 ---
 
-## Cost Estimate
+## Cost Estimate (2 Persons)
+
+> **Note:** Return trip (Day 2) carries an extra **105 kg (~231 lbs) package**, reducing fuel economy from ~17 MPG to ~16 MPG on the way back. Second passenger adds ~75 kg. Total extra load: ~180 kg (400 lbs).
 
 | Expense | Estimated Cost |
 |---|---|
-| Gas (~45 gallons × $5.90 avg) | $265 |
-| Hotel in Santa Clara (1 night) | $100–$220 |
-| Meals (Day 1 lunch/dinner, Day 2 lunch) | $60–$100 |
-| Coffee / snacks / treats | $25–$40 |
+| Gas (~47 gallons × $5.90 avg) | $277 |
+| ↳ *Day 1: 370 mi ÷ 17 MPG = 21.8 gal* | |
+| ↳ *Day 2: 400 mi ÷ 16 MPG = 25 gal (extra weight)* | |
+| Hotel in Santa Clara (1 night, 1 room) | $100–$220 |
+| Meals for 2 (Day 1 lunch/dinner, Day 2 lunch/dinner) | $120–$200 |
+| Coffee / snacks / treats for 2 | $40–$70 |
 | Parking (Santa Barbara, Pismo, Cannery Row) | $15–$25 |
 | 17-Mile Drive toll | $11.75 |
-| **Total Estimate** | **$475–$665** |
+| **Total Estimate (2 persons)** | **$565–$805** |
 
 ---
 
