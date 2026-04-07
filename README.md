@@ -1,5 +1,11 @@
 # An AI Design Trip Sample 🚙
 
+![AI](https://img.shields.io/badge/AI-GitHub_Copilot-8A2BE2) ![Model](https://img.shields.io/badge/Model-Claude_Opus_4.6-blueviolet) ![VS Code](https://img.shields.io/badge/IDE-VS_Code-007ACC) ![Trip](https://img.shields.io/badge/Trip-Round_Trip-green) ![Distance](https://img.shields.io/badge/Distance-770_miles-blue) ![Days](https://img.shields.io/badge/Days-2-orange)
+![Vehicle](https://img.shields.io/badge/Vehicle-2011_Jeep_Wrangler_Sahara-darkgreen) ![Engine](https://img.shields.io/badge/Engine-3.8L_V6-gray) ![MPG](https://img.shields.io/badge/MPG-17_combined-yellow)
+![Day 1](https://img.shields.io/badge/Day_1-US--101_North-1a73e8) ![Day 2](https://img.shields.io/badge/Day_2-CA--1_PCH_South-db2777) ![Big Sur](https://img.shields.io/badge/Big_Sur-Coastal_Drive-teal) ![Stanford](https://img.shields.io/badge/Stanford-Evening_Visit-8B0000)
+![Maps](https://img.shields.io/badge/Maps-Folium-77B829) ![Routing](https://img.shields.io/badge/Routing-OSRM-orange) ![Google Maps](https://img.shields.io/badge/Google_Maps-Embeds-4285F4) ![Python](https://img.shields.io/badge/Python-3.14-3776AB) ![License](https://img.shields.io/badge/License-Tutorial_Sample-lightgrey)
+![Persons](https://img.shields.io/badge/Persons-2-brightgreen) ![Cargo](https://img.shields.io/badge/Cargo-105_kg-red) ![17 Mile](https://img.shields.io/badge/17--Mile_Drive-Lone_Cypress-darkgoldenrod) ![Stops](https://img.shields.io/badge/Stops-Every_1.5--2_hrs-informational)
+
 > **A tutorial example showing how to use AI (GitHub Copilot) to plan a complete road trip — from route planning to interactive maps to packing lists.**
 
 This project was built entirely through a conversation with GitHub Copilot (Claude Opus 4.6) in VS Code. Every file — the trip plan, the maps, the generation scripts — was created by AI through iterative prompts and refinements. The [chat log](CHAT_LOG.md) documents the full conversation.
