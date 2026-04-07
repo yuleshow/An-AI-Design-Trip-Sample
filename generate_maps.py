@@ -1,13 +1,42 @@
 #!/usr/bin/env python3
-"""Generate interactive Folium HTML maps and static PNG map images for the trip."""
+"""Generate interactive Folium HTML maps and static PNG map images for the trip.
+Uses OSRM (Open Source Routing Machine) for actual road-following routes."""
 
 import folium
 from folium import plugins
 from staticmap import StaticMap, CircleMarker, Line
 from PIL import Image, ImageDraw, ImageFont
 import os
+import json
+import urllib.request
+import polyline  # pip install polyline
 
 OUT_DIR = os.path.dirname(os.path.abspath(__file__))
+
+
+def get_osrm_route(coords_list):
+    """Query OSRM for actual road route between a list of (lat, lon) coordinates.
+    Returns a list of (lat, lon) tuples following real roads."""
+    # OSRM expects lon,lat format
+    coord_str = ";".join(f"{lon},{lat}" for lat, lon in coords_list)
+    url = f"https://router.project-osrm.org/route/v1/driving/{coord_str}?overview=full&geometries=polyline"
+
+    print(f"  Fetching road route from OSRM ({len(coords_list)} waypoints)...")
+    req = urllib.request.Request(url, headers={"User-Agent": "TripMapGenerator/1.0"})
+    with urllib.request.urlopen(req, timeout=30) as resp:
+        data = json.loads(resp.read().decode())
+
+    if data["code"] != "Ok":
+        print(f"  ⚠️ OSRM returned: {data['code']}. Falling back to straight lines.")
+        return coords_list
+
+    # Decode the polyline geometry into (lat, lon) pairs
+    geometry = data["routes"][0]["geometry"]
+    decoded = polyline.decode(geometry)  # returns list of (lat, lon)
+    distance_km = data["routes"][0]["distance"] / 1000
+    duration_hr = data["routes"][0]["duration"] / 3600
+    print(f"  ✅ Got road route: {distance_km:.0f} km ({duration_hr:.1f} hr), {len(decoded)} points")
+    return decoded
 
 # ═══════════════════════════════════════════
 # Stop data
@@ -51,36 +80,22 @@ day2_stops = [
      "desc": "Home sweet home! 🎉 ~215 mi via US-101 S."},
 ]
 
-# Coastal waypoints for routing through Big Sur (avoid straight lines over water)
-day1_route_coords = [(s["lat"], s["lon"]) for s in day1_stops]
-
-# Day 2 needs coastal waypoints through Big Sur
-day2_route_coords = [
-    (37.3541, -121.9552),   # Santa Clara
-    (37.0000, -121.9500),   # South toward coast
-    (36.9741, -122.0297),   # Santa Cruz
-    (36.8900, -121.7900),   # Watsonville
-    (36.7900, -121.7700),   # Castroville
-    (36.6800, -121.8100),   # Marina
+# OSRM will compute actual road routes from stop coordinates
+# For Day 2, add waypoints to force the coastal CA-1 route through Big Sur
+day2_routing_waypoints = [
+    (37.3541, -121.9552),   # Santa Clara (departure)
+    (36.9741, -122.0297),   # Santa Cruz (force CA-17 → CA-1)
     (36.6177, -121.9010),   # Monterey
-    (36.5500, -121.9300),   # Carmel
-    (36.4800, -121.9200),   # Point Lobos area
     (36.3714, -121.9020),   # Bixby Bridge
-    (36.2500, -121.8500),   # Big Sur Village
-    (36.1000, -121.6500),   # Lucia
-    (35.9500, -121.4800),   # Gorda
-    (35.8000, -121.3500),   # Ragged Point
+    (36.0544, -121.5569),   # Lucia (Big Sur coast)
     (35.6625, -121.2561),   # San Simeon
     (35.3659, -120.8498),   # Morro Bay
-    (35.2800, -120.6600),   # SLO
-    (34.6148, -120.5884),   # Santa Barbara area
-    (34.2746, -119.2290),   # Ventura area
     (34.1478, -118.1445),   # Pasadena
 ]
 
 
 def create_folium_map(stops, route_coords, day_label, day_color, filename):
-    """Create an interactive Folium HTML map."""
+    """Create an interactive Folium HTML map with actual road routes."""
     # Center the map
     avg_lat = sum(s["lat"] for s in stops) / len(stops)
     avg_lon = sum(s["lon"] for s in stops) / len(stops)
@@ -205,19 +220,27 @@ def create_static_png(stops, route_coords, day_label, filename, width=1200, heig
 # ═══════════════════════════════════════════
 
 if __name__ == "__main__":
-    print("Generating interactive Folium maps...")
-    create_folium_map(day1_stops, day1_route_coords,
+    # Get actual road routes from OSRM
+    print("Fetching Day 1 road route (US-101)...")
+    day1_waypoints = [(s["lat"], s["lon"]) for s in day1_stops]
+    day1_road_route = get_osrm_route(day1_waypoints)
+
+    print("\nFetching Day 2 road route (CA-1 PCH)...")
+    day2_road_route = get_osrm_route(day2_routing_waypoints)
+
+    print("\nGenerating interactive Folium maps...")
+    create_folium_map(day1_stops, day1_road_route,
                       "Day 1 (Thu 4/9) — Pasadena → Santa Clara via US-101",
                       "#1a73e8", "day1_map.html")
-    create_folium_map(day2_stops, day2_route_coords,
+    create_folium_map(day2_stops, day2_road_route,
                       "Day 2 (Fri 4/10) — Santa Clara → Pasadena via CA-1 PCH 🌊",
                       "#db2777", "day2_map.html")
 
     print("\nGenerating static PNG maps...")
-    create_static_png(day1_stops, day1_route_coords,
+    create_static_png(day1_stops, day1_road_route,
                       "Day 1 (Thu 4/9) — Pasadena → Santa Clara via US-101",
                       "day1_map.png")
-    create_static_png(day2_stops, day2_route_coords,
+    create_static_png(day2_stops, day2_road_route,
                       "Day 2 (Fri 4/10) — Santa Clara → Pasadena via CA-1 PCH",
                       "day2_map.png")
 
