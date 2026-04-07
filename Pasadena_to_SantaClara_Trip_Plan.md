@@ -249,8 +249,31 @@
 
 ---
 
-### Stop 2: Bixby Bridge & Big Sur — ~2:20 PM
-**Drive:** ~30 miles | ~1 hr (CA-1 is slow and winding here — enjoy the views!)
+### Stop 2: 17-Mile Drive & The Lone Cypress — ~1:45 PM
+**Drive:** ~5 miles from Cannery Row | ~10 min to entrance
+*From Cannery Row → Ocean View Blvd → enter 17-Mile Drive at the Pacific Grove Gate*
+
+| Detail | Info |
+|---|---|
+| **Location** | 17-Mile Drive, Pebble Beach, CA 93953 |
+| **Entrance Fee** | $11.75 per vehicle |
+| **Parking** | Free pullouts at each viewpoint along the drive |
+
+**Things to Do (30–40 min):**
+- 🌲 **The Lone Cypress** — the iconic 250+ year-old Monterey cypress perched on a rocky outcrop above the Pacific. One of the most photographed trees in the world!
+- 🦭 **Bird Rock Vista Point** — sea lions, harbor seals, and cormorants on rocky islets
+- 🏌️ **Pebble Beach Golf Links** — catch a glimpse of the legendary oceanside course
+- 🌊 **Ghost Tree** — a dramatic windswept cypress with crashing waves below
+- 📸 Stunning coastal rock formations and turquoise coves the entire drive
+
+> **Route:** Enter at Pacific Grove Gate, drive south along the coast, stop at Lone Cypress and Bird Rock, then exit near Carmel-by-the-Sea and rejoin CA-1 south toward Big Sur.
+
+**Restrooms:** Available at The Lodge at Pebble Beach and at several viewpoint areas
+
+---
+
+### Stop 3: Bixby Bridge & Big Sur — ~3:00 PM
+**Drive:** ~25 miles | ~45 min (exit 17-Mile Drive near Carmel → CA-1 S)
 *CA-1 South — the legendary Big Sur coastal highway begins*
 
 | Detail | Info |
@@ -275,7 +298,7 @@
 
 ---
 
-### Stop 3: San Simeon / Elephant Seal Vista Point — ~4:40 PM
+### Stop 4: San Simeon / Elephant Seal Vista Point — ~5:20 PM
 **Drive:** ~60 miles | ~2 hours (very slow, scenic driving through southern Big Sur)
 *CA-1 South — continuing along dramatic coastal cliffs*
 
@@ -293,7 +316,7 @@
 
 ---
 
-### Stop 4: Morro Bay — ~5:15 PM (Dinner)
+### Stop 5: Morro Bay — ~5:55 PM (Dinner)
 **Drive:** ~25 miles | ~30 min
 *CA-1 South, an easy stretch after the Big Sur twists*
 
@@ -316,7 +339,7 @@
 
 ---
 
-### Homeward Stretch: Morro Bay → Pasadena — ~5:50 PM
+### Homeward Stretch: Morro Bay → Pasadena — ~6:30 PM
 **Drive:** ~215 miles | ~3.5 hours
 *CA-1 S merges into US-101 S at San Luis Obispo → US-101 S through Santa Barbara → US-101 S to Ventura → US-101 S / SR-134 E / I-210 E into Pasadena*
 
@@ -329,17 +352,17 @@
 
 > **No stops needed on this stretch** — you'll be driving through familiar territory from Day 1 in reverse. Bathrooms / gas available at any exit along US-101.
 
-> **Traffic Note:** By the time you reach the LA area (~8:30 PM), rush hour will be over. Smooth sailing home.
+> **Traffic Note:** By the time you reach the LA area (~9:00 PM), rush hour will be long over. Smooth sailing home.
 
 ---
 
-### Arrive Home: Pasadena — ~9:15–9:30 PM
+### Arrive Home: Pasadena — ~10:00 PM
 *US-101 S → SR-134 E → I-210 E → Pasadena*
 
 | Detail | Info |
 |---|---|
 | **Route** | US-101 S past Ventura → SR-134 E at Hollywood → I-210 E into Pasadena |
-| **Traffic Note** | Arriving after 9 PM means no traffic. The freeways will be wide open. |
+| **Traffic Note** | Arriving after 9:30 PM means no traffic. The freeways will be wide open. |
 
 🎉 **Welcome home! What a trip — ocean views both ways!**
 
@@ -456,7 +479,8 @@ Santa Clara ──(75mi)──► Monterey / Cannery Row
 | Meals (Day 1 lunch/dinner, Day 2 lunch) | $60–$100 |
 | Coffee / snacks / treats | $25–$40 |
 | Parking (Santa Barbara, Pismo, Cannery Row) | $15–$25 |
-| **Total Estimate** | **$465–$650** |
+| 17-Mile Drive toll | $11.75 |
+| **Total Estimate** | **$475–$665** |
 
 ---
 

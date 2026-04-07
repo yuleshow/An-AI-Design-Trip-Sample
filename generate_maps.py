@@ -70,13 +70,15 @@ day2_stops = [
      "desc": "Head to coast via CA-17 S → CA-1 S."},
     {"name": "Monterey / Cannery Row", "lat": 36.6177, "lon": -121.9010, "time": "~1:00 PM", "icon": "tint", "color": "pink",
      "desc": "Sea otters! ⛽ LAST GAS for 90 miles!"},
-    {"name": "Bixby Bridge & Big Sur", "lat": 36.3714, "lon": -121.9020, "time": "~2:20 PM", "icon": "camera", "color": "pink",
+    {"name": "17-Mile Drive & Lone Cypress", "lat": 36.5681, "lon": -121.9656, "time": "~1:45 PM", "icon": "tree-conifer", "color": "pink",
+     "desc": "Iconic 250+ year-old cypress. Bird Rock, Pebble Beach. $11.75 toll."},
+    {"name": "Bixby Bridge & Big Sur", "lat": 36.3714, "lon": -121.9020, "time": "~3:00 PM", "icon": "camera", "color": "pink",
      "desc": "714-ft bridge, 280 ft above crashing surf. Jaw-dropping!"},
-    {"name": "San Simeon — Elephant Seals", "lat": 35.6625, "lon": -121.2561, "time": "~4:40 PM", "icon": "eye-open", "color": "pink",
+    {"name": "San Simeon \u2014 Elephant Seals", "lat": 35.6625, "lon": -121.2561, "time": "~5:20 PM", "icon": "eye-open", "color": "pink",
      "desc": "FREE boardwalk over thousands of elephant seals!"},
-    {"name": "Morro Bay — Dinner", "lat": 35.3659, "lon": -120.8498, "time": "~5:15 PM", "icon": "cutlery", "color": "orange",
-     "desc": "Morro Rock! Seafood dinner. ⛽ Refuel after Big Sur."},
-    {"name": "Pasadena — Home", "lat": 34.1478, "lon": -118.1445, "time": "~9:15–9:30 PM", "icon": "home", "color": "green",
+    {"name": "Morro Bay \u2014 Dinner", "lat": 35.3659, "lon": -120.8498, "time": "~5:55 PM", "icon": "cutlery", "color": "orange",
+     "desc": "Morro Rock! Seafood dinner. \u26fd Refuel after Big Sur."},
+    {"name": "Pasadena \u2014 Home", "lat": 34.1478, "lon": -118.1445, "time": "~10:00 PM", "icon": "home", "color": "green",
      "desc": "Home sweet home! 🎉 ~215 mi via US-101 S."},
 ]
 
@@ -85,8 +87,7 @@ day2_stops = [
 day2_routing_waypoints = [
     (37.3541, -121.9552),   # Santa Clara (departure)
     (36.9741, -122.0297),   # Santa Cruz (force CA-17 → CA-1)
-    (36.6177, -121.9010),   # Monterey
-    (36.3714, -121.9020),   # Bixby Bridge
+    (36.6177, -121.9010),   # Monterey    (36.5681, -121.9656),   # Lone Cypress / 17-Mile Drive    (36.3714, -121.9020),   # Bixby Bridge
     (36.0544, -121.5569),   # Lucia (Big Sur coast)
     (35.6625, -121.2561),   # San Simeon
     (35.3659, -120.8498),   # Morro Bay
