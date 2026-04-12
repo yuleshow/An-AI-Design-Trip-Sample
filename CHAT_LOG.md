@@ -156,6 +156,55 @@ Updated fuel cost from $4.80/gal → $5.90/gal average. Added Costco tip to save
 
 ---
 
+## Step 17: Shields.io Badges
+
+**User:** Requested badges for the README.
+
+**AI:** Added shields.io badge labels to README.md — covering AI model, vehicle, route, tools, passengers, cargo, and more.
+
+---
+
+## Step 18: M5Stack Cardputer
+
+**User:** Add M5Stack Cardputer.
+
+**AI:** Added "M5Stack Cardputer — GPS recorder for logging the route" to the packing checklist.
+
+---
+
+## Step 19: Sony ZV-1 & DJI Pocket 3
+
+**User:** Add Sony ZV-1 and DJI Pocket 3.
+
+**AI:** Added both to the packing checklist:
+- Sony ZV-1 — compact vlogging camera for photos and video
+- DJI Pocket 3 — gimbal stabilized video for Big Sur driving footage
+
+---
+
+## Step 20: Hotel Search & Booking
+
+**User:** Suggest a hotel.
+
+**AI:** Searched Google Travel for hotels near 3223 Kenneth St, Santa Clara. Recommended three options:
+- Hyatt House Santa Clara ($211, 4.4★)
+- Holiday Inn Express & Suites Santa Clara ($173, 4.3★, free breakfast)
+- Sonesta Silicon Valley ($107, 3.9★)
+
+**User:** How about Hyatt Place San Jose Airport?
+
+**AI:** Confirmed details: $129/night, 4.2★, pool, fitness center, bar, complimentary breakfast.
+
+**User:** I already booked Hyatt Place San Jose Airport, add it to the schedule.
+
+**AI:** Replaced the generic hotel table with booked hotel details (Hyatt Place San Jose Airport, 1471 N 4th St, San Jose). Updated Day 2 morning to reference free breakfast. Adjusted total cost estimate.
+
+**User:** Total price is $168.98, update it.
+
+**AI:** Updated hotel price to $168.98/night. Revised total trip cost estimate from $565–$805 to $633–$753.
+
+---
+
 ## Key Takeaways
 
 1. **Iterative refinement works** — Start with a basic request, then refine route, timing, stops, and details through conversation.

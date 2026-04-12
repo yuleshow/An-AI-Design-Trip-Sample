@@ -183,6 +183,64 @@ The plan warned: *"NO gas stations for ~90 miles through Big Sur."* There is in 
 
 ---
 
+## Speed Analysis
+
+### Summary
+
+| Metric | Day 1 (US-101) | Day 2 (CA-1 / US-101) |
+|---|---|---|
+| **Peak speed** | 93.9 mph | 92.2 mph |
+| **Average (moving)** | 56.3 mph | 49.7 mph |
+| **Median (moving)** | 63.2 mph | 51.9 mph |
+| **95th percentile** | 80.5 mph | 75.6 mph |
+| **Dominant range** | 60–80 mph (50%) | 40–70 mph (54%) |
+
+Day 2 averaged **7 mph slower** than Day 1 — Big Sur's winding coastal cliffs vs the straight inland highway.
+
+### Day 1 — Speed Distribution
+
+| Speed Range | Count | Pct |
+|---|---|---|
+| 0–10 mph | 998 | 6.9% |
+| 10–20 mph | 803 | 5.6% |
+| 20–30 mph | 767 | 5.3% |
+| 30–40 mph | 847 | 5.9% |
+| 40–50 mph | 994 | 6.9% |
+| 50–60 mph | 2,033 | 14.1% |
+| 60–70 mph | 3,467 | 24.1% |
+| **70–80 mph** | **3,682** | **25.6%** |
+| 80–90 mph | 776 | 5.4% |
+| 90–100 mph | 15 | 0.1% |
+
+### Day 2 — Speed Distribution
+
+| Speed Range | Count | Pct |
+|---|---|---|
+| 0–10 mph | 891 | 5.9% |
+| 10–20 mph | 756 | 5.0% |
+| 20–30 mph | 1,171 | 7.7% |
+| 30–40 mph | 2,017 | 13.3% |
+| 40–50 mph | 2,376 | 15.7% |
+| 50–60 mph | 2,439 | 16.1% |
+| **60–70 mph** | **3,296** | **21.8%** |
+| 70–80 mph | 1,939 | 12.8% |
+| 80–90 mph | 231 | 1.5% |
+| 90–100 mph | 3 | 0.0% |
+
+### Peak Speed Locations
+
+- **Day 1: 93.9 mph** at 3:10 PM — Salinas Valley on US-101 (near Soledad/King City). Long, straight, flat highway through farmland. Sustained 92–94 mph burst over a 14-second window.
+- **Day 2: 92.2 mph** at 9:49 PM — near Santa Maria on US-101 southbound. Late-night homeward stretch on an empty highway. Top speeds all between 9:49–9:59 PM.
+
+### Notable Speed Patterns
+
+- **Big Sur (Day 2, 3:00–5:00 PM):** Average 22–38 mph through the narrow, winding cliffs — less than half the Day 1 highway cruise speed.
+- **Fastest half-hour:** Day 1, 3:00 PM — average 78 mph through the Salinas Valley.
+- **Late-night push:** Day 2, 9:30 PM — average 74 mph on US-101 trying to get home.
+- **Final arrival:** Day 2, 12:30 AM — average 0.7 mph. Home, parked.
+
+---
+
 ## Files
 
 | File | Description |

@@ -4,7 +4,7 @@
 ![Vehicle](https://img.shields.io/badge/Vehicle-2011_Jeep_Wrangler_Sahara-darkgreen) ![Engine](https://img.shields.io/badge/Engine-3.8L_V6-gray) ![MPG](https://img.shields.io/badge/MPG-17_combined-yellow)
 ![Day 1](https://img.shields.io/badge/Day_1-US--101_North-1a73e8) ![Day 2](https://img.shields.io/badge/Day_2-CA--1_PCH_South-db2777) ![Big Sur](https://img.shields.io/badge/Big_Sur-Coastal_Drive-teal) ![Stanford](https://img.shields.io/badge/Stanford-Evening_Visit-8B0000)
 ![Maps](https://img.shields.io/badge/Maps-Folium-77B829) ![Routing](https://img.shields.io/badge/Routing-OSRM-orange) ![Google Maps](https://img.shields.io/badge/Google_Maps-Embeds-4285F4) ![Python](https://img.shields.io/badge/Python-3.14-3776AB) ![License](https://img.shields.io/badge/License-Tutorial_Sample-lightgrey)
-![Persons](https://img.shields.io/badge/Persons-2-brightgreen) ![Cargo](https://img.shields.io/badge/Cargo-105_kg-red) ![17 Mile](https://img.shields.io/badge/17--Mile_Drive-Lone_Cypress-darkgoldenrod) ![Stops](https://img.shields.io/badge/Stops-Every_1.5--2_hrs-informational)
+![Persons](https://img.shields.io/badge/Persons-2-brightgreen) ![Cargo](https://img.shields.io/badge/Cargo-105_kg-red) ![17 Mile](https://img.shields.io/badge/17--Mile_Drive-Lone_Cypress-darkgoldenrod) ![Stops](https://img.shields.io/badge/Stops-Every_1.5--2_hrs-informational) ![Hotel](https://img.shields.io/badge/Hotel-Hyatt_Place_SJC-0055a5)
 
 > **A tutorial example showing how to use AI (GitHub Copilot) to plan a complete road trip — from route planning to interactive maps to packing lists.**
 
@@ -23,7 +23,7 @@ This project was built entirely through a conversation with GitHub Copilot (Clau
 | [day2_map.png](day2_map.png) | Static Day 2 route image |
 | [trip_map.html](trip_map.html) | Combined map page with Google Maps embeds (requires local server) |
 | [generate_maps.py](generate_maps.py) | Python script to regenerate maps with OSRM road-accurate routing |
-| [CHAT_LOG.md](CHAT_LOG.md) | Full conversation log showing how the project was built step by step |
+| [CHAT_LOG.md](CHAT_LOG.md) | Full conversation log — 20 steps showing how the project was built |
 
 ---
 
@@ -32,10 +32,10 @@ This project was built entirely through a conversation with GitHub Copilot (Clau
 **Pasadena ↔ Santa Clara, CA** — A 2-day, 770-mile round trip in a 2011 Jeep Wrangler Sahara for 2 persons.
 
 ### Day 1 (Thursday) — US-101 North
-Pasadena → Ventura → Santa Barbara → Solvang → Pismo Beach → Paso Robles → Gilroy → Santa Clara → **Stanford University** (evening visit)
+Pasadena → Ventura → Santa Barbara → Solvang → San Luis Obispo → Paso Robles → Gilroy → Santa Clara → **Stanford University** (evening visit) → **Hyatt Place San Jose Airport** (overnight)
 
 ### Day 2 (Friday) — CA-1 Pacific Coast Highway South 🌊
-Business meeting (9–11 AM) → Monterey → **17-Mile Drive & Lone Cypress** → Bixby Bridge / Big Sur → San Simeon (elephant seals) → Morro Bay (dinner) → Pasadena
+Free breakfast at hotel → Business meeting (9–11 AM) → Monterey → **17-Mile Drive & Lone Cypress** → Carmel-by-the-Sea → Bixby Bridge (photo stop) → San Simeon (elephant seals) → Harmony → Morro Bay (dinner) → Pasadena
 
 ![Day 1 Route](day1_map.png)
 ![Day 2 Route](day2_map.png)

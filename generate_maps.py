@@ -49,18 +49,18 @@ day1_stops = [
      "desc": "Ventura Pier & Promenade. First ocean views!"},
     {"name": "Santa Barbara", "lat": 34.4208, "lon": -119.6982, "time": "~9:30 AM", "icon": "star", "color": "blue",
      "desc": "Stearns Wharf, State Street. The 'American Riviera.'"},
-    {"name": "Solvang", "lat": 34.5958, "lon": -120.1376, "time": "~10:30 AM", "icon": "home", "color": "blue",
+    {"name": "Solvang — Lunch", "lat": 34.5958, "lon": -120.1376, "time": "~11:00 AM", "icon": "cutlery", "color": "orange",
      "desc": "Danish village! Æbleskiver pancakes, windmills."},
-    {"name": "Pismo Beach — Lunch", "lat": 35.1428, "lon": -120.6413, "time": "~12:00 PM", "icon": "cutlery", "color": "orange",
-     "desc": "Splash Café clam chowder! ⛽ Refuel here."},
-    {"name": "Paso Robles", "lat": 35.6264, "lon": -120.6910, "time": "~1:45 PM", "icon": "glass", "color": "blue",
+    {"name": "San Luis Obispo", "lat": 35.2828, "lon": -120.6596, "time": "~1:15 PM", "icon": "home", "color": "blue",
+     "desc": "Mission SLO (1772), Bubblegum Alley, creek-side downtown. ⛽ Refuel here."},
+    {"name": "Paso Robles", "lat": 35.6264, "lon": -120.6910, "time": "~2:20 PM", "icon": "glass", "color": "blue",
      "desc": "Wine country town square. Coffee & stretch."},
     {"name": "Gilroy", "lat": 37.0058, "lon": -121.5683, "time": "~4:15 PM", "icon": "shopping-cart", "color": "blue",
-     "desc": "Garlic Capital! Gilroy Premium Outlets."},
-    {"name": "3223 Kenneth St, Santa Clara", "lat": 37.3541, "lon": -121.9552, "time": "~5:30 PM", "icon": "briefcase", "color": "red",
-     "desc": "Arrive at destination. Drop luggage at hotel."},
+     "desc": "Garlic Capital! Garlic ice cream, rest stop."},
     {"name": "Stanford University", "lat": 37.4275, "lon": -122.1697, "time": "~5:45–7:00 PM", "icon": "graduation-cap", "color": "purple",
-     "desc": "Palm Drive, Main Quad, Memorial Church at golden hour!"},
+     "desc": "Palm Drive, Main Quad, Memorial Church at golden hour! 🌅"},
+    {"name": "Hyatt Place San Jose Airport", "lat": 37.3658, "lon": -121.9003, "time": "~7:15 PM", "icon": "bed", "color": "red",
+     "desc": "1471 N 4th St, San Jose. Check in, dinner, rest up for Day 2!"},
 ]
 
 day2_stops = [
@@ -72,13 +72,17 @@ day2_stops = [
      "desc": "Sea otters! ⛽ LAST GAS for 90 miles!"},
     {"name": "17-Mile Drive & Lone Cypress", "lat": 36.5681, "lon": -121.9656, "time": "~1:45 PM", "icon": "tree-conifer", "color": "pink",
      "desc": "Iconic 250+ year-old cypress. Bird Rock, Pebble Beach. $11.75 toll."},
-    {"name": "Bixby Bridge & Big Sur", "lat": 36.3714, "lon": -121.9020, "time": "~3:00 PM", "icon": "camera", "color": "pink",
-     "desc": "714-ft bridge, 280 ft above crashing surf. Jaw-dropping!"},
-    {"name": "San Simeon \u2014 Elephant Seals", "lat": 35.6625, "lon": -121.2561, "time": "~5:20 PM", "icon": "eye-open", "color": "pink",
-     "desc": "FREE boardwalk over thousands of elephant seals!"},
-    {"name": "Morro Bay \u2014 Dinner", "lat": 35.3659, "lon": -120.8498, "time": "~5:55 PM", "icon": "cutlery", "color": "orange",
-     "desc": "Morro Rock! Seafood dinner. \u26fd Refuel after Big Sur."},
-    {"name": "Pasadena \u2014 Home", "lat": 34.1478, "lon": -118.1445, "time": "~10:00 PM", "icon": "home", "color": "green",
+    {"name": "Carmel-by-the-Sea", "lat": 36.5554, "lon": -121.9233, "time": "~2:30 PM", "icon": "picture", "color": "pink",
+     "desc": "100+ art galleries, storybook cottages, Carmel Mission (1770)."},
+    {"name": "Bixby Bridge (Photo Stop)", "lat": 36.3714, "lon": -121.9020, "time": "~3:15 PM", "icon": "camera", "color": "pink",
+     "desc": "714-ft bridge, 280 ft above crashing surf. Quick photos!"},
+    {"name": "San Simeon — Elephant Seals", "lat": 35.6625, "lon": -121.2561, "time": "~5:30 PM", "icon": "eye-open", "color": "pink",
+     "desc": "FREE boardwalk over thousands of elephant seals! 🌅 Golden hour."},
+    {"name": "Harmony (Pop. 18)", "lat": 35.5086, "lon": -121.0228, "time": "~6:00 PM", "icon": "flag", "color": "pink",
+     "desc": "Ghost town! Old creamery (1869), glassworks, pottery."},
+    {"name": "Morro Bay — Dinner", "lat": 35.3659, "lon": -120.8498, "time": "~6:20 PM", "icon": "cutlery", "color": "orange",
+     "desc": "Morro Rock! Seafood dinner. ⛽ Refuel after Big Sur. 🌅 Sunset ~7:30 PM."},
+    {"name": "Pasadena — Home", "lat": 34.1478, "lon": -118.1445, "time": "~10:30 PM", "icon": "home", "color": "green",
      "desc": "Home sweet home! 🎉 ~215 mi via US-101 S."},
 ]
 
@@ -87,9 +91,13 @@ day2_stops = [
 day2_routing_waypoints = [
     (37.3541, -121.9552),   # Santa Clara (departure)
     (36.9741, -122.0297),   # Santa Cruz (force CA-17 → CA-1)
-    (36.6177, -121.9010),   # Monterey    (36.5681, -121.9656),   # Lone Cypress / 17-Mile Drive    (36.3714, -121.9020),   # Bixby Bridge
+    (36.6177, -121.9010),   # Monterey
+    (36.5681, -121.9656),   # Lone Cypress / 17-Mile Drive
+    (36.5554, -121.9233),   # Carmel-by-the-Sea
+    (36.3714, -121.9020),   # Bixby Bridge
     (36.0544, -121.5569),   # Lucia (Big Sur coast)
     (35.6625, -121.2561),   # San Simeon
+    (35.5086, -121.0228),   # Harmony
     (35.3659, -120.8498),   # Morro Bay
     (34.1478, -118.1445),   # Pasadena
 ]

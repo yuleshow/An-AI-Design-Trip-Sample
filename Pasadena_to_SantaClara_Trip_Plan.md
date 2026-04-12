@@ -17,6 +17,29 @@
 
 ---
 
+## Sightseeing at a Glance
+
+### Day 1 — US-101 North (Pasadena → Santa Clara)
+1. **Ventura Pier** — panoramic ocean views, wooden Ventura sign
+2. **Stearns Wharf, Santa Barbara** — oldest working wharf in CA (1872); Courthouse clock tower 360° view
+3. **Solvang Danish Village** — windmills, half-timbered buildings, aebleskiver lunch
+4. **Mission San Luis Obispo de Tolosa** (1772) — California mission, Bubblegum Alley, creek-side downtown
+5. **Paso Robles Downtown** — tree-lined City Park, wine country
+6. **Gilroy** — rest stop, coffee, stretch after long Salinas Valley drive
+7. **Stanford University** — Palm Drive, Memorial Church mosaics, Main Quad, Hoover Tower (golden hour)
+
+### Day 2 — CA-1 PCH South (Santa Clara → Pasadena)
+1. **Cannery Row, Monterey** — Steinbeck's waterfront, sea otters in the bay
+2. **17-Mile Drive / Lone Cypress** — 250-year-old cypress on ocean rock, Bird Rock, Ghost Tree, Pebble Beach
+3. **Carmel-by-the-Sea** — 100+ art galleries, storybook cottages, Carmel Mission (1770)
+4. **Bixby Creek Bridge** (photo stop) — 714 ft span, 280 ft above the surf; most photographed bridge in CA
+5. **Big Sur coast (from the car)** — Point Sur Lighthouse, Pfeiffer redwoods, McWay Falls (80 ft onto beach)
+6. **Piedras Blancas Elephant Seal Rookery** — free boardwalk, thousands of seals, Hearst Castle on the hilltop
+7. **Harmony, CA (pop. 18)** — ghost town / former dairy creamery (1869), glassworks, pottery, on CA-1
+8. **Morro Rock, Morro Bay** — 581-ft volcanic plug, seafood dinner on the Embarcadero, sea otters in harbor
+
+---
+
 ## Vehicle Specs & Fuel Planning
 
 | Spec | Value |
@@ -31,16 +54,18 @@
 
 > **⚠️ Gas prices are HIGH right now!** CA average is ~$5.90/gal (Apr 2026). LA area ~$6.03, Santa Barbara ~$5.68, Salinas/Monterey ~$5.88, San Jose ~$5.92. Budget accordingly — consider filling up at Costco ($0.30–$0.50 cheaper) when possible.
 
-> **Fuel Strategy:** Fill up in Pasadena before departure. Refuel at Pismo Beach area on Day 1. Fill up in Santa Clara before Day 2. **CRITICAL for Day 2:** Gas stations are scarce on CA-1 through Big Sur (~90 miles with NO gas). Fill up in Monterey and again in San Simeon/Cambria or Morro Bay.
+> **Fuel Strategy:** Fill up in Pasadena before departure. Refuel at San Luis Obispo on Day 1. Fill up in Santa Clara before Day 2. **CRITICAL for Day 2:** Gas stations are scarce on CA-1 through Big Sur (~90 miles with NO gas). Fill up in Monterey and again in San Simeon/Cambria or Morro Bay.
 
 ---
 
 # ═══════════════════════════════════════════
 # DAY 1 (Thursday, April 9): Pasadena → Santa Clara via US-101 (Coastal)
-# ~370 miles | ~6 hr driving + 4 scenic stops
+# ~370 miles | ~6 hr driving + 7 scenic stops | 🌅 Sunset ~7:30 PM
 # ═══════════════════════════════════════════
 
 ### Departure: Pasadena — 7:00 AM
+- Add oil
+- Set the car monitor date/time
 - Fill up gas tank before leaving
 - Take **I-210 West → SR-134 West → US-101 North**
 - Head through San Fernando Valley toward Ventura
@@ -55,6 +80,7 @@
 |---|---|
 | **Location** | Ventura, CA |
 | **Parking** | Free/metered parking along Harbor Blvd & at Ventura Pier |
+| **📍 Navigator** | 668 Harbor Blvd, Ventura, CA 93001 — [Google Maps](https://www.google.com/maps/search/?api=1&query=668+Harbor+Blvd+Ventura+CA+93001) · [Waze](https://waze.com/ul?q=668+Harbor+Blvd+Ventura+CA+93001&navigate=yes) |
 
 **Things to Do (20–30 min):**
 - 🌊 Quick stroll to the end of **Ventura Pier** — panoramic ocean views
@@ -72,6 +98,7 @@
 |---|---|
 | **Location** | Santa Barbara, CA |
 | **Parking** | Public lots on Cabrillo Blvd near Stearns Wharf (metered, ~$2.50/hr) |
+| **📍 Navigator** | 217 Stearns Wharf, Santa Barbara, CA 93101 — [Google Maps](https://www.google.com/maps/search/?api=1&query=217+Stearns+Wharf+Santa+Barbara+CA+93101) · [Waze](https://waze.com/ul?q=217+Stearns+Wharf+Santa+Barbara+CA+93101&navigate=yes) |
 
 **Things to Do (45–60 min):**
 - 🐚 Walk out on **Stearns Wharf** — oldest working wharf in CA (1872), free to walk, ocean views
@@ -90,6 +117,7 @@
 |---|---|
 | **Location** | Solvang, CA (Danish Village) |
 | **Parking** | Free public parking lots throughout the village |
+| **📍 Navigator** | 1672 Copenhagen Dr, Solvang, CA 93463 — [Google Maps](https://www.google.com/maps/search/?api=1&query=1672+Copenhagen+Dr+Solvang+CA+93463) · [Waze](https://waze.com/ul?q=1672+Copenhagen+Dr+Solvang+CA+93463&navigate=yes) |
 
 **Things to Do (45–60 min, including lunch):**
 - 🏘️ Walk through the **Danish Village** — half-timbered buildings, windmills, cobblestone walkways
@@ -101,33 +129,36 @@
 
 ---
 
-### Stop 4: Pismo Beach — ~12:45 PM
-**Drive:** ~60 miles from Solvang | ~1 hour
-*Back to US-101 N, through Santa Maria, exit at Pismo Beach*
+### Stop 4: San Luis Obispo — ~1:15 PM
+**Drive:** ~75 miles from Solvang | ~1 hr 15 min
+*US-101 N through Santa Maria, exit at San Luis Obispo*
 
 | Detail | Info |
 |---|---|
-| **Location** | Pismo Beach, CA |
-| **Parking** | Pay lot at the pier ($8–$12/day) or metered street parking |
-| **⛽ Gas** | Fill up here — several stations on Price St near US-101 |
+| **Location** | San Luis Obispo, CA |
+| **Parking** | Free 2-hour parking in downtown garages; metered street parking |
+| **⛽ Gas** | Fill up here — stations along Higuera St and Monterey St |
+| **📍 Navigator** | 751 Palm St, San Luis Obispo, CA 93401 — [Google Maps](https://www.google.com/maps/search/?api=1&query=751+Palm+St+San+Luis+Obispo+CA+93401) · [Waze](https://waze.com/ul?q=751+Palm+St+San+Luis+Obispo+CA+93401&navigate=yes) |
 
 **Things to Do (30–40 min):**
-- 🌅 Walk out on the **Pismo Beach Pier** — great views up and down the coast
-- 🏖️ Quick beach walk — feel the sand under your feet
-- 🍦 Grab an ice cream or salt water taffy from the shops along Pomeroy Ave
+- ⛪ **Mission San Luis Obispo de Tolosa** (1772) — one of the 21 original California missions, beautiful courtyard with a bear fountain and grape arbor. Free to visit plaza; museum donation $5
+- 🌿 Walk along **San Luis Obispo Creek** through the charming downtown — lined with shops and cafés
+- 🍽️ Quick lunch on **Higuera Street** — vibrant pedestrian-friendly downtown with local restaurants
+- 🧱 Check out **Bubblegum Alley** — a quirky 70-foot-long alley completely covered in chewed gum (love it or hate it, it's a SLO icon since the 1950s)
 
-**Restrooms:** At the pier parking area
+**Restrooms:** At the Mission, downtown restaurants, and public parking garages
 
 ---
 
-### Stop 5: Paso Robles — ~2:15 PM
-**Drive:** ~55 miles from Pismo Beach | ~50 minutes
-*US-101 N through San Luis Obispo and over Cuesta Grade (7% grade, 1,522 ft elevation)*
+### Stop 5: Paso Robles — ~2:20 PM
+**Drive:** ~30 miles from San Luis Obispo | ~30 minutes
+*US-101 N over Cuesta Grade (7% grade, 1,522 ft elevation)*
 
 | Detail | Info |
 |---|---|
 | **Location** | Paso Robles, CA |
 | **Parking** | Free parking around the downtown City Park |
+| **📍 Navigator** | 1000 Spring St, Paso Robles, CA 93446 — [Google Maps](https://www.google.com/maps/search/?api=1&query=1000+Spring+St+Paso+Robles+CA+93446) · [Waze](https://waze.com/ul?q=1000+Spring+St+Paso+Robles+CA+93446&navigate=yes) |
 
 **Things to Do (20–30 min):**
 - 🌳 Stroll through **Downtown City Park** — tree-lined square with gazebo
@@ -145,34 +176,28 @@
 | Detail | Info |
 |---|---|
 | **Location** | Gilroy, CA — "Garlic Capital of the World" |
-| **Parking** | Free at Gilroy Premium Outlets |
+| **Parking** | Free street parking in downtown Gilroy |
+| **📍 Navigator** | 7461 Monterey St, Gilroy, CA 95020 — [Google Maps](https://www.google.com/maps/search/?api=1&query=7461+Monterey+St+Gilroy+CA+95020) · [Waze](https://waze.com/ul?q=7461+Monterey+St+Gilroy+CA+95020&navigate=yes) |
 
-**Things to Do (20–30 min):**
-- 🧄 Pick up garlic products at a local shop — garlic ice cream, garlic braids, garlic olive oil
-- 🚶 Stretch your legs at the **Gilroy Premium Outlets** if you want a quick browse
+**Things to Do (15–20 min):**
+- 🍦 Try the famous **garlic ice cream** — only in Gilroy!
+- 🚶 Stretch your legs with a quick walk — long drive from Paso Robles
+- ☕ Grab a coffee or snack
 
-**Restrooms:** At the outlets
+**Restrooms:** Downtown restaurants and gas stations
 
 ---
 
-### Arrive: 3223 Kenneth St, Santa Clara — ~5:30 PM
-**Drive:** ~30 miles from Gilroy | ~35 minutes
-*US-101 N → exit Great America Parkway or San Tomas Expressway → local streets to Kenneth St*
-
-| Detail | Info |
-|---|---|
-| **Destination** | 3223 Kenneth St, Santa Clara, CA 95054 |
-| **Neighborhood** | Near Santa Clara University and downtown Santa Clara |
-
 ### 🎓 Stop 7: Stanford University — ~5:45–7:00 PM
-**Drive:** ~10 miles from destination | ~15 minutes
-*Head northwest on El Camino Real → Stanford campus entrance at Palm Drive*
+**Drive:** ~40 miles from Gilroy | ~50 minutes
+*US-101 N → exit University Ave or Sand Hill Rd → Palm Drive entrance*
 
 | Detail | Info |
 |---|---|
 | **Location** | Stanford University, 450 Serra Mall, Stanford, CA 94305 |
 | **Time on Campus** | ~45–60 minutes |
-| **Sunset** | ~7:40 PM (April) — perfect golden-hour lighting |
+| **Sunset** | ~7:30 PM (April) — perfect golden-hour lighting from ~6:30 PM |
+| **📍 Navigator** | 450 Serra Mall, Stanford, CA 94305 — [Google Maps](https://www.google.com/maps/search/?api=1&query=450+Serra+Mall+Stanford+CA+94305) · [Waze](https://waze.com/ul?q=450+Serra+Mall+Stanford+CA+94305&navigate=yes) |
 
 **What to See:**
 - 🌴 **Palm Drive** — the iconic entrance avenue lined with towering palms
@@ -190,22 +215,26 @@
   - *The Sushi Spot* — if you're craving Japanese
   - *In-N-Out Burger* (Great America Pkwy) — California classic, open late
   - *University Ave, Palo Alto* — tons of restaurants right near Stanford
-- 🏨 **Hotel for the night:**
+- 🏨 **Hotel: Hyatt Place San Jose Airport** (BOOKED)
 
-| Hotel | Price Range | Notes |
-|---|---|---|
-| Hilton Santa Clara | $$$  | Next to Levi's Stadium |
-| TownePlace Suites Santa Clara | $$  | Near Great America |
-| Motel 6 Santa Clara | $  | Budget-friendly, clean |
-| Avatar Hotel | $$  | Boutique, good reviews |
+| Detail | Info |
+|---|---|
+| Hotel | Hyatt Place San Jose Airport |
+| Address | 1471 N 4th St, San Jose, CA 95112 |
+| Price | $168.98/night |
+| Rating | 4.2★ |
+| Check-in | Thu, Apr 9 |
+| Check-out | Fri, Apr 10 |
+| Amenities | Free breakfast, free Wi-Fi, outdoor pool, fitness center, bar |
+| Parking | Paid |
 
-> **Tip:** Relax tonight — your business meeting is tomorrow morning (9:00 AM). Get a good night's sleep!
+> **Tip:** Take advantage of the **free breakfast** before your 9 AM meeting — saves time and money. Relax tonight and get a good night's sleep!
 
 ---
 
 # ═══════════════════════════════════════════
 # DAY 2 (Friday, April 10): Santa Clara → Pasadena via CA-1 Pacific Coast Highway (Ocean!)
-# 9–11 AM business meeting, then ~400 miles | ~8.5 hr driving + 4 stops
+# 9–11 AM business meeting, then ~400 miles | ~8.5 hr driving + 7 stops | 🌅 Sunset ~7:30 PM
 # ═══════════════════════════════════════════
 
 > **Why CA-1 / Pacific Coast Highway?** This is one of the most stunning coastal drives in the world. You'll hug the Pacific Ocean bluffs through Big Sur, see crashing waves, sea otters, elephant seals, and iconic bridges perched hundreds of feet above the surf. It's slower than I-5, but absolutely unforgettable.
@@ -215,13 +244,13 @@
 ### 💼 Business Meeting — 9:00–11:00 AM
 - **Location:** 3223 Kenneth St, Santa Clara, CA 95054
 - **Duration:** 2 hours
-- Have breakfast at the hotel, check out, and head to your meeting by 8:45 AM
+- Have **free breakfast at Hyatt Place**, check out, and head to your meeting by 8:45 AM
 - ⛽ **Fill up gas before the meeting or right after** (Costco on Coleman Ave, or stations along El Camino Real)
 
 ### Departure: Santa Clara — ~11:15 AM
 - Meeting wrapped! Time to hit the coast.
 - Take **CA-17 South → CA-1 South** toward Santa Cruz and Monterey
-- Today is a long, scenic drive — you'll arrive home late evening (~9:30 PM)
+- Today is a long, scenic drive — you'll arrive home late evening (~10:30 PM)
 
 ---
 
@@ -233,6 +262,7 @@
 |---|---|
 | **Location** | Cannery Row, Monterey, CA 93940 |
 | **Parking** | Paid lots along Cannery Row ($2–$3/hr) or metered street parking |
+| **📍 Navigator** | 700 Cannery Row, Monterey, CA 93940 — [Google Maps](https://www.google.com/maps/search/?api=1&query=700+Cannery+Row+Monterey+CA+93940) · [Waze](https://waze.com/ul?q=700+Cannery+Row+Monterey+CA+93940&navigate=yes) |
 
 **Things to Do (30–40 min):**
 - 🌊 **Walk along Cannery Row** — the famous waterfront street from John Steinbeck's novel
@@ -258,6 +288,8 @@
 | **Location** | 17-Mile Drive, Pebble Beach, CA 93953 |
 | **Entrance Fee** | $11.75 per vehicle |
 | **Parking** | Free pullouts at each viewpoint along the drive |
+| **📍 Navigator** | Pacific Grove Gate: Sunset Dr, Pacific Grove, CA 93950 — [Google Maps](https://www.google.com/maps/search/?api=1&query=Pacific+Grove+Gate+17+Mile+Drive+Pacific+Grove+CA) · [Waze](https://waze.com/ul?q=Pacific+Grove+Gate+17+Mile+Drive+Pacific+Grove+CA&navigate=yes) |
+| **📍 Lone Cypress** | The Lone Cypress, 17-Mile Dr, Pebble Beach — [Google Maps](https://www.google.com/maps/search/?api=1&query=The+Lone+Cypress+Pebble+Beach+CA) |
 
 **Things to Do (30–40 min):**
 - 🌲 **The Lone Cypress** — the iconic 250+ year-old Monterey cypress perched on a rocky outcrop above the Pacific. One of the most photographed trees in the world!
@@ -272,25 +304,46 @@
 
 ---
 
-### Stop 3: Bixby Bridge & Big Sur — ~3:00 PM
-**Drive:** ~25 miles | ~45 min (exit 17-Mile Drive near Carmel → CA-1 S)
+### Stop 3: Carmel-by-the-Sea — ~2:30 PM
+**Drive:** ~5 miles from 17-Mile Drive exit | ~10 min
+*Exit 17-Mile Drive at the Carmel Gate → Ocean Ave into the village*
+
+| Detail | Info |
+|---|---|
+| **Location** | Carmel-by-the-Sea, CA 93921 |
+| **Parking** | Free 2-hour street parking throughout the village (no meters!) |
+| **📍 Navigator** | Ocean Ave & San Carlos St, Carmel-by-the-Sea, CA 93921 — [Google Maps](https://www.google.com/maps/search/?api=1&query=Ocean+Ave+San+Carlos+St+Carmel+by+the+Sea+CA+93921) · [Waze](https://waze.com/ul?q=Ocean+Ave+Carmel+by+the+Sea+CA+93921&navigate=yes) |
+
+**Things to Do (25–30 min):**
+- 🎨 Stroll **Ocean Avenue** — Carmel has 100+ art galleries packed into a few walkable blocks. European village feel with fairy-tale cottages and no street addresses (by design!)
+- ⛪ **Carmel Mission** (1770) — one of the most beautiful of the 21 California missions; burial place of Father Junípero Serra. Stone courtyard, museum, Moorish bell tower
+- 🏠 Admire the **storybook cottages** — Carmel's unique architecture: no chain restaurants, no streetlights, no house numbers
+- 📸 Walk to the end of Ocean Ave for a view of **Carmel Beach** — white sand, turquoise water, Monterey cypress trees
+
+> **Fun fact:** Clint Eastwood was mayor of Carmel from 1986–1988. He famously overturned a law banning ice cream cones downtown.
+
+**Restrooms:** Public restrooms at Sunset Center (San Carlos & 9th) and at Carmel Beach
+
+---
+
+### Stop 4: Bixby Bridge — ~3:15 PM (Photo Stop)
+**Drive:** ~15 miles from Carmel | ~25 min
 *CA-1 South — the legendary Big Sur coastal highway begins*
 
 | Detail | Info |
 |---|---|
 | **Location** | Bixby Creek Bridge, Big Sur, CA 93920 |
-| **Parking** | Small pullout on the north side of the bridge (arrive early, fills up fast) |
+| **Parking** | Small pullout on the north side of the bridge (fills up fast) |
+| **📍 Navigator** | Bixby Creek Bridge, Big Sur, CA 93920 — [Google Maps](https://www.google.com/maps/search/?api=1&query=36.3714,-121.9020) · [Waze](https://waze.com/ul?ll=36.3714,-121.9020&navigate=yes) |
 
-**Things to Do (30–40 min):**
-- 🌉 **Bixby Creek Bridge** — the most photographed bridge in California. A single-arch concrete bridge spanning 714 feet, perched **280 feet above the crashing surf below**
-- 📸 Photo ops from the north-side pullout looking back at the bridge with ocean backdrop
-- 🌊 The views up and down the coast from here are jaw-dropping — sheer cliffs plunging into turquoise water
-- 🌿 Breathe in the ocean air and listen to the waves crashing far below
+**Quick Photo Stop (10–15 min):**
+- 🌉 **Bixby Creek Bridge** — the most photographed bridge in California. Single-arch concrete span of 714 feet, **280 feet above the crashing surf**
+- 📸 Quick photos from the north-side pullout — bridge with ocean backdrop
 
-**More Big Sur driving highlights (no stop needed, enjoy from the car):**
+**More Big Sur driving highlights (enjoy from the car):**
 - **Point Sur Lighthouse** — visible perched on a volcanic rock jutting into the sea
 - **Pfeiffer Big Sur State Park** — towering redwoods meet the coast
-- **McWay Falls** (Julia Pfeiffer Burns State Park) — an 80-foot waterfall that drops directly onto a pristine beach cove. Quick pullout view from the highway.
+- **McWay Falls** (Julia Pfeiffer Burns State Park) — an 80-foot waterfall that drops directly onto a pristine beach cove
 
 > **Driving Note:** CA-1 through Big Sur is winding, narrow, and has steep drop-offs with limited guardrails. Drive carefully, use pullouts to let faster traffic pass, and **no cell phone service** for most of Big Sur.
 
@@ -298,14 +351,17 @@
 
 ---
 
-### Stop 4: San Simeon / Elephant Seal Vista Point — ~5:20 PM
+### Stop 5: San Simeon / Elephant Seal Vista Point — ~5:30 PM
 **Drive:** ~60 miles | ~2 hours (very slow, scenic driving through southern Big Sur)
 *CA-1 South — continuing along dramatic coastal cliffs*
+
+> 🌅 **Golden hour starts here** — the late-afternoon light on the cliffs and elephant seals is gorgeous for photography.
 
 | Detail | Info |
 |---|---|
 | **Location** | Piedras Blancas Elephant Seal Rookery, San Simeon, CA 93452 |
 | **Parking** | Free, paved lot right off CA-1 |
+| **📍 Navigator** | Piedras Blancas Elephant Seal Rookery — [Google Maps](https://www.google.com/maps/search/?api=1&query=35.6625,-121.2542) · [Waze](https://waze.com/ul?ll=35.6625,-121.2542&navigate=yes) |
 
 **Things to Do (30–40 min):**
 - 🦭 **Elephant Seal Vista Point** — a FREE boardwalk overlooking a beach where **thousands of enormous elephant seals** rest, play, and argue. Males can weigh up to 5,000 lbs! This is one of the most unique wildlife experiences in California.
@@ -316,14 +372,39 @@
 
 ---
 
-### Stop 5: Morro Bay — ~5:55 PM (Dinner)
-**Drive:** ~25 miles | ~30 min
-*CA-1 South, an easy stretch after the Big Sur twists*
+### Stop 6: Harmony, CA — ~6:00 PM (Ghost Town)
+**Drive:** ~10 miles from San Simeon | ~10 min
+*CA-1 South — you'll drive right through it*
+
+| Detail | Info |
+|---|---|
+| **Location** | Harmony, CA 93435 (on CA-1 between Cambria and Cayucos) |
+| **Parking** | Pull off CA-1 onto the single paved street |
+| **📍 Navigator** | Harmony, CA 93435 — [Google Maps](https://www.google.com/maps/search/?api=1&query=35.5086,-121.0228) · [Waze](https://waze.com/ul?ll=35.5086,-121.0228&navigate=yes) |
+
+**Things to Do (5–10 min):**
+- 👻 Photo with the **"Harmony, Population 18"** sign — one of California's tiniest ghost towns
+- 🏭 Peek at the old **Harmony Valley Creamery** building (1901) — now houses a glassworks and pottery shop
+- 🔮 **Harmony Glassworks** — watch hand-blown glass being made (if open)
+- 💒 Tiny **wedding chapel** in the back — quirky photo spot
+
+> **Fun fact:** William Randolph Hearst used to stop here for fresh buttermilk on his way to Hearst Castle, 12 miles up the road. Founded 1869 by Swiss dairy farmers — named "Harmony" after feuding owners finally called a truce.
+
+**Restrooms:** None — use facilities at San Simeon or Morro Bay
+
+---
+
+### Stop 7: Morro Bay — ~6:20 PM (Dinner)
+**Drive:** ~15 miles from Harmony | ~20 min
+*CA-1 South, easy stretch after Big Sur twists*
+
+> 🌅 **Sunset ~7:30 PM** — Morro Rock at golden hour is spectacular. Try to catch it before you leave!
 
 | Detail | Info |
 |---|---|
 | **Location** | Morro Bay Embarcadero, Morro Bay, CA 93442 |
 | **Parking** | Free parking along the Embarcadero and side streets |
+| **📍 Navigator** | 714 Embarcadero, Morro Bay, CA 93442 — [Google Maps](https://www.google.com/maps/search/?api=1&query=714+Embarcadero+Morro+Bay+CA+93442) · [Waze](https://waze.com/ul?q=714+Embarcadero+Morro+Bay+CA+93442&navigate=yes) |
 
 **Things to Do (30–40 min, quick dinner):**
 - 🪨 **Morro Rock** — a massive 581-foot volcanic plug jutting out of the ocean. Quick photo from the parking area.
@@ -339,24 +420,24 @@
 
 ---
 
-### Homeward Stretch: Morro Bay → Pasadena — ~6:30 PM
+### Homeward Stretch: Morro Bay → Pasadena — ~7:00 PM
 **Drive:** ~215 miles | ~3.5 hours
 *CA-1 S merges into US-101 S at San Luis Obispo → US-101 S through Santa Barbara → US-101 S to Ventura → US-101 S / SR-134 E / I-210 E into Pasadena*
 
 | Segment | Distance | Time | Notes |
 |---|---|---|---|
 | Morro Bay → San Luis Obispo | 15 mi | 20 min | CA-1 → merge onto US-101 S |
-| SLO → Santa Barbara | 100 mi | 1 hr 30 min | US-101 S through wine country, sunset views |
+| SLO → Santa Barbara | 100 mi | 1 hr 30 min | US-101 S through wine country, 🌅 sunset ~7:30 PM |
 | Santa Barbara → Ventura | 30 mi | 30 min | US-101 S, sunset over the ocean |
 | Ventura → Pasadena | 70 mi | 1 hr 15 min | US-101 S → SR-134 E → I-210 E (traffic clears by 8 PM) |
 
 > **No stops needed on this stretch** — you'll be driving through familiar territory from Day 1 in reverse. Bathrooms / gas available at any exit along US-101.
 
-> **Traffic Note:** By the time you reach the LA area (~9:00 PM), rush hour will be long over. Smooth sailing home.
+> **Traffic Note:** By the time you reach the LA area (~9:15 PM), rush hour will be long over. Smooth sailing home.
 
 ---
 
-### Arrive Home: Pasadena — ~10:00 PM
+### Arrive Home: Pasadena — ~10:30 PM
 *US-101 S → SR-134 E → I-210 E → Pasadena*
 
 | Detail | Info |
@@ -374,11 +455,11 @@
 DAY 1 — UP via US-101 (Coastal / Scenic):
 Pasadena ──(70mi)──► Ventura ──(30mi)──► Santa Barbara ──(35mi)──► Solvang
                                                                        │
-                                                                   (60mi)
+                                                                   (75mi)
                                                                        │
-                                                                  Pismo Beach
+                                                              San Luis Obispo ⛪
                                                                        │
-                                                                   (55mi)
+                                                                   (30mi)
                                                                        │
                                                                   Paso Robles
                                                                        │
@@ -394,7 +475,15 @@ Pasadena ──(70mi)──► Ventura ──(30mi)──► Santa Barbara ─�
 DAY 2 — BACK via CA-1 Pacific Coast Highway (Ocean!):
 Santa Clara ──(75mi)──► Monterey / Cannery Row
                               │
-                          (30mi) ← winding cliffside road!
+                          (10mi)
+                              │
+                    17-Mile Drive / Lone Cypress 🌲
+                              │
+                          (5mi)
+                              │
+                    Carmel-by-the-Sea 🎨
+                              │
+                          (15mi) ← winding cliffside road!
                               │
                         Bixby Bridge / Big Sur 🌊
                               │
@@ -402,9 +491,13 @@ Santa Clara ──(75mi)──► Monterey / Cannery Row
                               │
                     San Simeon (elephant seals! 🦭)
                               │
-                          (25mi)
+                          (10mi)
+                              |
+                    Harmony (pop. 18 👻)
+                              |
+                          (15mi)
                               │
-                        Morro Bay 🪨 (lunch)
+                        Morro Bay 🪨 (dinner)
                               │
                          (215mi) ← US-101 S homeward
                               │
@@ -416,6 +509,7 @@ Santa Clara ──(75mi)──► Monterey / Cannery Row
 ## Packing Checklist for Your Wrangler
 
 - [ ] Driver's license & registration
+- [ ] Braun M60 Mobile Electric Foil Shaver (washable)
 - [ ] Phone charger / car charger (12V)
 - [ ] Sunglasses — lots of sun on both coastal drives
 - [ ] Sunscreen
@@ -423,7 +517,22 @@ Santa Clara ──(75mi)──► Monterey / Cannery Row
 - [ ] Comfortable walking shoes (Cannery Row, Morro Rock, elephant seals)
 - [ ] Camera — you WILL regret not having one on the Big Sur drive
 - [ ] Camera flash / external speedlight — for Lone Cypress, Stanford at dusk, and low-light shots
+- [ ] Camera battery charger
+- [ ] Sony ZV-1 — compact vlogging camera for photos and video
+- [ ] DJI Pocket 3 — gimbal stabilized video for Big Sur driving footage
+- [ ] M5Stack Cardputer — GPS recorder for logging the route (charge via USB-C beforehand)
+- [ ] Plaud Note — AI voice recorder for meeting notes and trip audio memos
+- [ ] Inhale HFA — inhaler
+- [ ] Lighter
+- [ ] Cigarettes
+- [ ] Vapor
 - [ ] Cash — some Big Sur cafés and small-town shops are cash-only
+- [ ] Ice chest with 4× ice blocks — keep food & drinks cold for the drive
+- [ ] Beef (jerky or sliced, for road snacking)
+- [ ] Salami
+- [ ] Apples
+- [ ] Beer (for evening at hotel — **do NOT open while driving**)
+- [ ] Spring water
 - [ ] Water bottles (at least 2L — limited services in Big Sur)
 - [ ] Snacks for the road — **especially for Big Sur stretch** where there are few/no stores
 - [ ] Instant coffee packets (for quick caffeine when no café is nearby)
@@ -439,7 +548,7 @@ Santa Clara ──(75mi)──► Monterey / Cannery Row
 
 1. **Fuel Strategy (CRITICAL):**
    - Your Wrangler gets ~17–19 MPG highway. Plan for ~45 gallons total (~770 miles round trip).
-   - **Fill up 4 times:** Pasadena (start), Pismo Beach area (mid Day 1), Monterey (before Big Sur — **MANDATORY**), Morro Bay (after Big Sur).
+   - **Fill up 4 times:** Pasadena (start), San Luis Obispo (mid Day 1), Monterey (before Big Sur — **MANDATORY**), Morro Bay (after Big Sur).
    - ⚠️ **NO gas stations for ~90 miles between Monterey and San Simeon.** Do NOT enter Big Sur with less than half a tank.
    - If driving a 2-door (18.6 gal tank / ~315 mi range), the Big Sur stretch is fine on a full tank, but don't push it.
 
@@ -450,7 +559,7 @@ Santa Clara ──(75mi)──► Monterey / Cannery Row
 
 3. **Traffic Tips:**
    - **Day 1:** Leave Pasadena by **7:00 AM** to beat LA morning rush on US-101
-   - **Day 2:** Business meeting 9–11 AM, depart ~11:15 AM. You'll arrive home ~9:30 PM — after rush hour, so no traffic concerns
+   - **Day 2:** Business meeting 9–11 AM, depart ~11:15 AM. You'll arrive home ~10:30 PM — after rush hour, so no traffic concerns
 
 4. **Tolls:** **No tolls** on either route.
 
@@ -486,13 +595,13 @@ Santa Clara ──(75mi)──► Monterey / Cannery Row
 | Gas (~47 gallons × $5.90 avg) | $277 |
 | ↳ *Day 1: 370 mi ÷ 17 MPG = 21.8 gal* | |
 | ↳ *Day 2: 400 mi ÷ 16 MPG = 25 gal (extra weight)* | |
-| Hotel in Santa Clara (1 night, 1 room) | $100–$220 |
+| Hotel — Hyatt Place San Jose Airport (1 night) | $168.98 |
 | Meals for 2 (Day 1 lunch/dinner, Day 2 lunch/dinner) | $120–$200 |
 | Coffee / snacks / treats for 2 | $40–$70 |
-| Parking (Santa Barbara, Pismo, Cannery Row) | $15–$25 |
+| Parking (Santa Barbara, SLO, Cannery Row) | $15–$25 |
 | 17-Mile Drive toll | $11.75 |
-| **Total Estimate (2 persons)** | **$565–$805** |
+| **Total Estimate (2 persons)** | **$633–$753** |
 
 ---
 
-*Two days, two routes, 740 miles of California — coastal cliffs going up, mountain passes coming down. Enjoy the ride in your Wrangler! 🛣️*
+*Two days, two routes, 770 miles of California — coastal cliffs going up, Pacific Coast Highway coming back. Enjoy the ride in your Wrangler! 🛣️*

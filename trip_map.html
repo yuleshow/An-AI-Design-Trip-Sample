@@ -36,10 +36,15 @@
       cursor: pointer;
       font-size: 15px;
       font-weight: 600;
+      border: none;
       border-bottom: 3px solid transparent;
+      background: transparent;
       transition: all 0.2s;
       user-select: none;
       color: #64748b;
+      text-decoration: none;
+      -webkit-tap-highlight-color: rgba(0,0,0,0.1);
+      touch-action: manipulation;
     }
     .tab:hover { color: #334155; background: #f8fafc; }
     .tab.active-day1 { color: #1a73e8; border-bottom-color: #1a73e8; }
@@ -184,8 +189,8 @@
   </div>
 
   <div class="tabs">
-    <div class="tab active-day1" id="tab1" onclick="showDay(1)">🟦 Day 1 (Thu 4/9) — US-101 North</div>
-    <div class="tab" id="tab2" onclick="showDay(2)">🟪 Day 2 (Fri 4/10) — CA-1 PCH South</div>
+    <a class="tab active-day1" id="tab1" href="#day1">🟦 Day 1 (Thu 4/9) — US-101 North</a>
+    <a class="tab" id="tab2" href="#day2">🟪 Day 2 (Fri 4/10) — CA-1 PCH South</a>
   </div>
 
   <!-- ═══════ DAY 1 ═══════ -->
@@ -194,11 +199,11 @@
       <iframe
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
-        src="https://maps.google.com/maps?saddr=Pasadena,+CA&daddr=Ventura,+CA+to:Santa+Barbara,+CA+to:Solvang,+CA+to:Pismo+Beach,+CA+to:Paso+Robles,+CA+to:Gilroy,+CA+to:3223+Kenneth+St,+Santa+Clara,+CA+95054+to:Stanford+University,+Stanford,+CA&output=embed"
+        src="https://maps.google.com/maps?saddr=Pasadena,+CA&daddr=668+Harbor+Blvd,+Ventura,+CA+93001+to:217+Stearns+Wharf,+Santa+Barbara,+CA+93101+to:1672+Copenhagen+Dr,+Solvang,+CA+93463+to:751+Palm+St,+San+Luis+Obispo,+CA+93401+to:1000+Spring+St,+Paso+Robles,+CA+93446+to:7461+Monterey+St,+Gilroy,+CA+95020+to:450+Serra+Mall,+Stanford,+CA+94305+to:1471+N+4th+St,+San+Jose,+CA+95112&output=embed"
         allowfullscreen
       ></iframe>
       <div class="gmaps-overlay">
-        <a class="open-gmaps day1" href="https://www.google.com/maps/dir/Pasadena,+CA/Ventura,+CA/Santa+Barbara,+CA/Solvang,+CA/Pismo+Beach,+CA/Paso+Robles,+CA/Gilroy,+CA/3223+Kenneth+St,+Santa+Clara,+CA+95054/Stanford+University,+Stanford,+CA" target="_blank" rel="noopener">
+        <a class="open-gmaps day1" href="https://www.google.com/maps/dir/Pasadena,+CA/668+Harbor+Blvd,+Ventura,+CA+93001/217+Stearns+Wharf,+Santa+Barbara,+CA+93101/1672+Copenhagen+Dr,+Solvang,+CA+93463/751+Palm+St,+San+Luis+Obispo,+CA+93401/1000+Spring+St,+Paso+Robles,+CA+93446/7461+Monterey+St,+Gilroy,+CA+95020/450+Serra+Mall,+Stanford,+CA+94305/1471+N+4th+St,+San+Jose,+CA+95112" target="_blank" rel="noopener">
           📍 Open Day 1 Route in Google Maps
         </a>
       </div>
@@ -221,31 +226,31 @@
       </div>
       <div class="stop-card">
         <div class="stop-line"><div class="stop-dot" style="color:#1a73e8"></div><div class="stop-connector" style="background:#1a73e8"></div></div>
-        <div class="stop-info"><h3>🏘️ Stop 3: Solvang</h3><div class="time">~10:30 AM · 35 mi · 40 min</div><div class="desc">Danish village! Æbleskiver pancakes, windmills, bakeries.</div></div>
+        <div class="stop-info"><h3>🏘️ Stop 3: Solvang — Lunch</h3><div class="time">~11:00 AM · 35 mi · 40 min</div><div class="desc">Danish village! Æbleskiver pancakes, windmills, bakeries. Lunch here.</div></div>
       </div>
       <div class="stop-card">
         <div class="stop-line"><div class="stop-dot" style="color:#1a73e8"></div><div class="stop-connector" style="background:#1a73e8"></div></div>
-        <div class="stop-info"><h3>🏖️ Stop 4: Pismo Beach — Lunch</h3><div class="time">~12:00 PM · 60 mi · 1 hr</div><div class="desc">Splash Café clam chowder in a bread bowl — legendary! Walk the pier.</div><span class="fuel-badge">⛽ Refuel here</span></div>
+        <div class="stop-info"><h3>⛪ Stop 4: San Luis Obispo</h3><div class="time">~1:15 PM · 75 mi · 1 hr 15 min</div><div class="desc">Mission SLO (1772), Bubblegum Alley, creek-side downtown stroll.</div><span class="fuel-badge">⛽ Refuel here</span></div>
       </div>
       <div class="stop-card">
         <div class="stop-line"><div class="stop-dot" style="color:#1a73e8"></div><div class="stop-connector" style="background:#1a73e8"></div></div>
-        <div class="stop-info"><h3>🍷 Stop 5: Paso Robles</h3><div class="time">~1:45 PM · 55 mi · 50 min</div><div class="desc">Wine country town square. Coffee, ice cream, stretch your legs.</div></div>
+        <div class="stop-info"><h3>🍷 Stop 5: Paso Robles</h3><div class="time">~2:20 PM · 30 mi · 30 min</div><div class="desc">Wine country town square. Coffee, ice cream, stretch your legs.</div></div>
       </div>
       <div class="stop-card">
         <div class="stop-line"><div class="stop-dot" style="color:#1a73e8"></div><div class="stop-connector" style="background:#1a73e8"></div></div>
-        <div class="stop-info"><h3>🧄 Stop 6: Gilroy</h3><div class="time">~4:15 PM · 100 mi · 1 hr 45 min</div><div class="desc">"Garlic Capital of the World." Quick browse at Gilroy Premium Outlets.</div></div>
+        <div class="stop-info"><h3>🧄 Stop 6: Gilroy</h3><div class="time">~4:15 PM · 100 mi · 1 hr 40 min</div><div class="desc">"Garlic Capital of the World." Garlic ice cream, rest stop after long Salinas Valley drive.</div></div>
       </div>
       <div class="stop-card">
         <div class="stop-line"><div class="stop-dot" style="color:#1a73e8"></div><div class="stop-connector" style="background:#1a73e8"></div></div>
-        <div class="stop-info"><h3>💼 Arrive: 3223 Kenneth St, Santa Clara</h3><div class="time">~5:30 PM · 30 mi · 35 min</div><div class="desc">Drop off luggage at hotel, freshen up. Then head to Stanford!</div></div>
+        <div class="stop-info"><h3>🎓 Stop 7: Stanford University</h3><div class="time">~5:45–7:00 PM · 40 mi · 50 min</div><div class="desc">Palm Drive, Main Quad, Memorial Church (stunning at golden hour!), Hoover Tower. Free parking after 4 PM. 🌅 Sunset ~7:30 PM.</div></div>
       </div>
       <div class="stop-card">
         <div class="stop-line"><div class="stop-dot" style="color:#1a73e8"></div></div>
-        <div class="stop-info"><h3>🎓 Stop 7: Stanford University</h3><div class="time">~5:45–7:00 PM · 10 mi · 15 min</div><div class="desc">Palm Drive, Main Quad, Memorial Church (stunning at golden hour!), Hoover Tower. Free parking after 4 PM. Sunset ~7:40 PM — perfect dusk walk.</div></div>
+        <div class="stop-info"><h3>🏨 Hotel: Hyatt Place San Jose Airport</h3><div class="time">~7:15 PM · 15 mi · 20 min</div><div class="desc">1471 N 4th St, San Jose, CA 95112. $168.98/night. Free breakfast, Wi-Fi, pool. Check in & relax!</div></div>
       </div>
 
       <div class="btn-row">
-        <a class="open-gmaps day1" href="https://www.google.com/maps/dir/Pasadena,+CA/Ventura,+CA/Santa+Barbara,+CA/Solvang,+CA/Pismo+Beach,+CA/Paso+Robles,+CA/Gilroy,+CA/3223+Kenneth+St,+Santa+Clara,+CA+95054/Stanford+University,+Stanford,+CA" target="_blank" rel="noopener">
+        <a class="open-gmaps day1" href="https://www.google.com/maps/dir/Pasadena,+CA/668+Harbor+Blvd,+Ventura,+CA+93001/217+Stearns+Wharf,+Santa+Barbara,+CA+93101/1672+Copenhagen+Dr,+Solvang,+CA+93463/751+Palm+St,+San+Luis+Obispo,+CA+93401/1000+Spring+St,+Paso+Robles,+CA+93446/7461+Monterey+St,+Gilroy,+CA+95020/450+Serra+Mall,+Stanford,+CA+94305/1471+N+4th+St,+San+Jose,+CA+95112" target="_blank" rel="noopener">
           📍 Open Day 1 in Google Maps
         </a>
       </div>
@@ -258,11 +263,11 @@
       <iframe
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
-        src="https://maps.google.com/maps?saddr=3223+Kenneth+St,+Santa+Clara,+CA+95054&daddr=Cannery+Row,+Monterey,+CA+to:The+Lone+Cypress,+Pebble+Beach,+CA+to:Bixby+Creek+Bridge,+Big+Sur,+CA+to:Piedras+Blancas+Elephant+Seal+Rookery,+San+Simeon,+CA+to:Morro+Bay,+CA+to:Pasadena,+CA&output=embed"
+        src="https://maps.google.com/maps?saddr=3223+Kenneth+St,+Santa+Clara,+CA+95054&daddr=700+Cannery+Row,+Monterey,+CA+93940+to:Sunset+Dr,+Pacific+Grove,+CA+93950+to:Ocean+Ave+%26+San+Carlos+St,+Carmel-by-the-Sea,+CA+93921+to:Bixby+Creek+Bridge,+Big+Sur,+CA+93920+to:Piedras+Blancas+Elephant+Seal+Rookery,+San+Simeon,+CA+93452+to:Harmony,+CA+93435+to:714+Embarcadero,+Morro+Bay,+CA+93442+to:Pasadena,+CA&output=embed"
         allowfullscreen
       ></iframe>
       <div class="gmaps-overlay">
-        <a class="open-gmaps day2" href="https://www.google.com/maps/dir/3223+Kenneth+St,+Santa+Clara,+CA+95054/Cannery+Row,+Monterey,+CA/The+Lone+Cypress,+Pebble+Beach,+CA/Bixby+Creek+Bridge,+Big+Sur,+CA/Piedras+Blancas+Elephant+Seal+Rookery,+San+Simeon,+CA/Morro+Bay,+CA/Pasadena,+CA" target="_blank" rel="noopener">
+        <a class="open-gmaps day2" href="https://www.google.com/maps/dir/3223+Kenneth+St,+Santa+Clara,+CA+95054/700+Cannery+Row,+Monterey,+CA+93940/Sunset+Dr,+Pacific+Grove,+CA+93950/Ocean+Ave+%26+San+Carlos+St,+Carmel-by-the-Sea,+CA+93921/Bixby+Creek+Bridge,+Big+Sur,+CA+93920/Piedras+Blancas+Elephant+Seal+Rookery,+San+Simeon,+CA+93452/Harmony,+CA+93435/714+Embarcadero,+Morro+Bay,+CA+93442/Pasadena,+CA" target="_blank" rel="noopener">
           📍 Open Day 2 Route in Google Maps
         </a>
       </div>
@@ -290,27 +295,35 @@
       </div>
       <div class="stop-card">
         <div class="stop-line"><div class="stop-dot" style="color:#db2777"></div><div class="stop-connector" style="background:#db2777"></div></div>
-        <div class="stop-info"><h3>� Stop 2: 17-Mile Drive & Lone Cypress</h3><div class="time">~1:45 PM · 5 mi · $11.75 toll</div><div class="desc">Iconic 250+ year-old cypress on rocky outcrop. Bird Rock, Pebble Beach Golf Links, Ghost Tree. Stunning coastal drive!</div></div>
+        <div class="stop-info"><h3>🌲 Stop 2: 17-Mile Drive & Lone Cypress</h3><div class="time">~1:45 PM · 5 mi · $11.75 toll</div><div class="desc">Iconic 250+ year-old cypress on rocky outcrop. Bird Rock, Pebble Beach Golf Links, Ghost Tree. Stunning coastal drive!</div></div>
       </div>
       <div class="stop-card">
         <div class="stop-line"><div class="stop-dot" style="color:#db2777"></div><div class="stop-connector" style="background:#db2777"></div></div>
-        <div class="stop-info"><h3>🌉 Stop 3: Bixby Bridge & Big Sur</h3><div class="time">~3:00 PM · 25 mi · 45 min</div><div class="desc">714-ft bridge, 280 ft above crashing surf. Most photographed bridge in CA. Jaw-dropping coastal cliffs.</div></div>
+        <div class="stop-info"><h3>🎨 Stop 3: Carmel-by-the-Sea</h3><div class="time">~2:30 PM · 5 mi · 10 min</div><div class="desc">100+ art galleries, storybook cottages, Carmel Mission (1770). No street addresses by design!</div></div>
       </div>
       <div class="stop-card">
         <div class="stop-line"><div class="stop-dot" style="color:#db2777"></div><div class="stop-connector" style="background:#db2777"></div></div>
-        <div class="stop-info"><h3>🪭 Stop 4: San Simeon — Elephant Seals</h3><div class="time">~5:20 PM · 60 mi · 2 hr</div><div class="desc">FREE boardwalk over thousands of elephant seals (up to 5,000 lbs!). Hearst Castle on the hilltop.</div></div>
+        <div class="stop-info"><h3>🌉 Stop 4: Bixby Bridge (Photo Stop)</h3><div class="time">~3:15 PM · 15 mi · 25 min</div><div class="desc">714-ft bridge, 280 ft above crashing surf. Most photographed bridge in CA. Quick photos from the pullout.</div></div>
       </div>
       <div class="stop-card">
         <div class="stop-line"><div class="stop-dot" style="color:#db2777"></div><div class="stop-connector" style="background:#db2777"></div></div>
-        <div class="stop-info"><h3>🪨 Stop 5: Morro Bay — Dinner</h3><div class="time">~5:55 PM · 25 mi · 30 min</div><div class="desc">Morro Rock — 581-ft volcanic plug. Quick seafood dinner on the Embarcadero.</div><span class="fuel-badge">⛽ Refuel after Big Sur</span></div>
+        <div class="stop-info"><h3>🦭 Stop 5: San Simeon — Elephant Seals</h3><div class="time">~5:30 PM · 60 mi · 2 hr</div><div class="desc">FREE boardwalk over thousands of elephant seals (up to 5,000 lbs!). Hearst Castle on the hilltop. 🌅 Golden hour!</div></div>
+      </div>
+      <div class="stop-card">
+        <div class="stop-line"><div class="stop-dot" style="color:#db2777"></div><div class="stop-connector" style="background:#db2777"></div></div>
+        <div class="stop-info"><h3>👻 Stop 6: Harmony (Pop. 18)</h3><div class="time">~6:00 PM · 10 mi · 10 min</div><div class="desc">Ghost town! Old creamery (1869), glassworks, pottery. Photo with "Population 18" sign.</div></div>
+      </div>
+      <div class="stop-card">
+        <div class="stop-line"><div class="stop-dot" style="color:#db2777"></div><div class="stop-connector" style="background:#db2777"></div></div>
+        <div class="stop-info"><h3>🪨 Stop 7: Morro Bay — Dinner</h3><div class="time">~6:20 PM · 15 mi · 20 min</div><div class="desc">Morro Rock — 581-ft volcanic plug. Quick seafood dinner on the Embarcadero. 🌅 Sunset ~7:30 PM.</div><span class="fuel-badge">⛽ Refuel after Big Sur</span></div>
       </div>
       <div class="stop-card">
         <div class="stop-line"><div class="stop-dot" style="color:#db2777"></div></div>
-        <div class="stop-info"><h3>🏠 Arrive Home: Pasadena</h3><div class="time">~10:00 PM · 215 mi · 3.5 hr via US-101 S</div><div class="desc">SLO → Santa Barbara → Ventura → Pasadena. No traffic at this hour — smooth sailing home! 🎉</div></div>
+        <div class="stop-info"><h3>🏠 Arrive Home: Pasadena</h3><div class="time">~10:30 PM · 215 mi · 3.5 hr via US-101 S</div><div class="desc">SLO → Santa Barbara → Ventura → Pasadena. No traffic at this hour — smooth sailing home! 🎉</div></div>
       </div>
 
       <div class="btn-row">
-        <a class="open-gmaps day2" href="https://www.google.com/maps/dir/3223+Kenneth+St,+Santa+Clara,+CA+95054/Cannery+Row,+Monterey,+CA/The+Lone+Cypress,+Pebble+Beach,+CA/Bixby+Creek+Bridge,+Big+Sur,+CA/Piedras+Blancas+Elephant+Seal+Rookery,+San+Simeon,+CA/Morro+Bay,+CA/Pasadena,+CA" target="_blank" rel="noopener">
+        <a class="open-gmaps day2" href="https://www.google.com/maps/dir/3223+Kenneth+St,+Santa+Clara,+CA+95054/700+Cannery+Row,+Monterey,+CA+93940/Sunset+Dr,+Pacific+Grove,+CA+93950/Ocean+Ave+%26+San+Carlos+St,+Carmel-by-the-Sea,+CA+93921/Bixby+Creek+Bridge,+Big+Sur,+CA+93920/Piedras+Blancas+Elephant+Seal+Rookery,+San+Simeon,+CA+93452/Harmony,+CA+93435/714+Embarcadero,+Morro+Bay,+CA+93442/Pasadena,+CA" target="_blank" rel="noopener">
           📍 Open Day 2 in Google Maps
         </a>
       </div>
@@ -324,6 +337,8 @@
       document.getElementById('tab1').className = 'tab' + (day === 1 ? ' active-day1' : '');
       document.getElementById('tab2').className = 'tab' + (day === 2 ? ' active-day2' : '');
     }
+    document.getElementById('tab1').addEventListener('click', function(e) { e.preventDefault(); showDay(1); });
+    document.getElementById('tab2').addEventListener('click', function(e) { e.preventDefault(); showDay(2); });
   </script>
 </body>
 </html>
