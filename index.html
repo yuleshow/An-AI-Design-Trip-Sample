@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Design Trip — Pasadena ↔ Santa Clara</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+            min-height: 100vh;
+        }
+        .hero {
+            background: linear-gradient(135deg, #1e3a5f 0%, #0f172a 50%, #1a1a2e 100%);
+            padding: 3rem 1.5rem 2rem;
+            text-align: center;
+            border-bottom: 1px solid #1e293b;
+        }
+        .hero h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(90deg, #60a5fa, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero p {
+            color: #94a3b8;
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .badges {
+            margin-top: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.4rem;
+        }
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.6rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        .badge-blue { background: #1e40af; color: #bfdbfe; }
+        .badge-purple { background: #5b21b6; color: #ddd6fe; }
+        .badge-green { background: #166534; color: #bbf7d0; }
+        .badge-orange { background: #9a3412; color: #fed7aa; }
+        .badge-pink { background: #9d174d; color: #fbcfe8; }
+        .badge-teal { background: #115e59; color: #99f6e4; }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #f1f5f9;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2.5rem;
+        }
+        .card {
+            background: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-decoration: none;
+            color: #e2e8f0;
+            transition: transform 0.15s, border-color 0.15s, box-shadow 0.15s;
+            display: flex;
+            flex-direction: column;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+            border-color: #60a5fa;
+            box-shadow: 0 4px 20px rgba(96, 165, 250, 0.15);
+        }
+        .card .icon {
+            font-size: 2rem;
+            margin-bottom: 0.75rem;
+        }
+        .card h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+        }
+        .card p {
+            color: #94a3b8;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            flex-grow: 1;
+        }
+        .card .tag {
+            margin-top: 0.75rem;
+            font-size: 0.75rem;
+            color: #64748b;
+        }
+
+        .route-summary {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 2.5rem;
+        }
+        .route-card {
+            background: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 12px;
+            padding: 1.5rem;
+        }
+        .route-card h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        .route-card .route-desc {
+            color: #94a3b8;
+            font-size: 0.85rem;
+            line-height: 1.6;
+        }
+        .day1-accent { border-left: 3px solid #3b82f6; }
+        .day2-accent { border-left: 3px solid #ec4899; }
+
+        .stats {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 1.5rem 0;
+        }
+        .stat {
+            text-align: center;
+        }
+        .stat .num {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #60a5fa;
+        }
+        .stat .label {
+            font-size: 0.8rem;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1.5rem;
+            color: #475569;
+            font-size: 0.85rem;
+            border-top: 1px solid #1e293b;
+        }
+        footer a { color: #60a5fa; text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 1.6rem; }
+            .route-summary { grid-template-columns: 1fr; }
+            .cards { grid-template-columns: 1fr; }
+            .stats { gap: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="hero">
+    <h1>An AI Design Trip Sample</h1>
+    <p>Pasadena ↔ Santa Clara — a 2-day, 871-mile road trip planned entirely by AI</p>
+    <div class="badges">
+        <span class="badge badge-purple">GitHub Copilot</span>
+        <span class="badge badge-purple">Claude Opus 4.6</span>
+        <span class="badge badge-blue">VS Code</span>
+        <span class="badge badge-green">2 Days</span>
+        <span class="badge badge-orange">871 Miles</span>
+        <span class="badge badge-teal">Jeep Wrangler</span>
+    </div>
+    <div class="stats">
+        <div class="stat"><div class="num">871</div><div class="label">Miles Driven</div></div>
+        <div class="stat"><div class="num">2</div><div class="label">Days</div></div>
+        <div class="stat"><div class="num">24</div><div class="label">Stops</div></div>
+        <div class="stat"><div class="num">20</div><div class="label">AI Steps</div></div>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="route-summary">
+        <div class="route-card day1-accent">
+            <h3>🔵 Day 1 — US-101 North</h3>
+            <div class="route-desc">
+                Pasadena → Ventura → Santa Barbara → Solvang → SLO → Paso Robles → Gilroy → Santa Clara → Stanford → Hotel
+                <br><strong>451 miles</strong> · 9 stops · All planned stops visited
+            </div>
+        </div>
+        <div class="route-card day2-accent">
+            <h3>🩷 Day 2 — CA-1 PCH South</h3>
+            <div class="route-desc">
+                Hotel → Business meeting → Monterey → 17-Mile Drive → Carmel → Bixby Bridge → San Simeon → Pasadena
+                <br><strong>419 miles</strong> · 15 stops · Big Sur coastal drive
+            </div>
+        </div>
+    </div>
+
+    <div class="section-title">🗺️ Interactive Maps</div>
+    <div class="cards">
+        <a class="card" href="day1_map.html">
+            <div class="icon">📍</div>
+            <h3>Day 1 Map — US-101 North</h3>
+            <p>Interactive Leaflet map with OSRM road-accurate routing, stop markers, and popup details.</p>
+            <div class="tag">Folium · OpenStreetMap</div>
+        </a>
+        <a class="card" href="day2_map.html">
+            <div class="icon">🌊</div>
+            <h3>Day 2 Map — CA-1 PCH South</h3>
+            <p>Pacific Coast Highway route with Big Sur, 17-Mile Drive, Bixby Bridge, and elephant seals.</p>
+            <div class="tag">Folium · OpenStreetMap</div>
+        </a>
+        <a class="card" href="trip_map.html">
+            <div class="icon">🗺️</div>
+            <h3>Combined Trip Map</h3>
+            <p>Both days on one page with Google Maps embeds and navigation links.</p>
+            <div class="tag">Google Maps Embeds</div>
+        </a>
+        <a class="card" href="trip_map_mobile.html">
+            <div class="icon">📱</div>
+            <h3>Mobile Trip Map</h3>
+            <p>Mobile-optimized version of the combined trip map.</p>
+            <div class="tag">Responsive</div>
+        </a>
+    </div>
+
+    <div class="section-title">📊 Post-Trip Analysis</div>
+    <div class="cards">
+        <a class="card" href="day1_comparison.html">
+            <div class="icon">🔄</div>
+            <h3>Day 1 — Planned vs Actual</h3>
+            <p>Side-by-side comparison of planned route against actual GPS track from Day 1.</p>
+            <div class="tag">GPX Data · Comparison</div>
+        </a>
+        <a class="card" href="day2_comparison.html">
+            <div class="icon">🔄</div>
+            <h3>Day 2 — Planned vs Actual</h3>
+            <p>Side-by-side comparison of planned route against actual GPS track from Day 2.</p>
+            <div class="tag">GPX Data · Comparison</div>
+        </a>
+    </div>
+
+    <div class="section-title">📄 Documentation</div>
+    <div class="cards">
+        <a class="card" href="https://github.com/yuleshow/An-AI-Design-Trip-Sample/blob/main/README.md">
+            <div class="icon">📖</div>
+            <h3>README</h3>
+            <p>Project overview and tutorial — how to use AI to plan a complete road trip.</p>
+            <div class="tag">GitHub</div>
+        </a>
+        <a class="card" href="https://github.com/yuleshow/An-AI-Design-Trip-Sample/blob/main/Pasadena_to_SantaClara_Trip_Plan.md">
+            <div class="icon">🗓️</div>
+            <h3>Trip Plan</h3>
+            <p>Complete guide with stops, timing, fuel strategy, packing list, and cost estimate.</p>
+            <div class="tag">GitHub</div>
+        </a>
+        <a class="card" href="https://github.com/yuleshow/An-AI-Design-Trip-Sample/blob/main/POST_TRIP_REPORT.md">
+            <div class="icon">📋</div>
+            <h3>Post-Trip Report</h3>
+            <p>Actual vs planned comparison — distances, timing, stops visited, fuel economy.</p>
+            <div class="tag">GitHub</div>
+        </a>
+        <a class="card" href="https://github.com/yuleshow/An-AI-Design-Trip-Sample/blob/main/CHAT_LOG.md">
+            <div class="icon">💬</div>
+            <h3>Chat Log</h3>
+            <p>Full 20-step conversation showing how the entire project was built with AI.</p>
+            <div class="tag">GitHub</div>
+        </a>
+    </div>
+
+</div>
+
+<footer>
+    Built with <a href="https://github.com/features/copilot">GitHub Copilot</a> · Claude Opus 4.6 · 
+    <a href="https://github.com/yuleshow/An-AI-Design-Trip-Sample">View on GitHub</a>
+</footer>
+
+</body>
+</html>
